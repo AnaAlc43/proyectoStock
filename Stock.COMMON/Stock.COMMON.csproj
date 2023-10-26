@@ -49,6 +49,7 @@
     <Compile Include="Entities\User.cs" />
     <Compile Include="Entities\UserRoles.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
+    <Compile Include="Interfaces\Repositories\IProductRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
