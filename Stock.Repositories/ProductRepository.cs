@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Stock.Repositories
 {
-    public class ProductRepository : IRepository<Product>
+    public class ProductRepository : IUnitOfWork<Product>
     {
         public List<Product> Read => throw new NotImplementedException();
 

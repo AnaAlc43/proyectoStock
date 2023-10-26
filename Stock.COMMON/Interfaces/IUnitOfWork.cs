@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Stock.COMMON.Interfaces
 {
-    public interface IRepository<T> where T : class
+    public interface IUnitOfWork<T> where T : class
         //Este repositorio va a ser de tipo "T" -> TIPO donde esta T hereda de una clase no especificada.
         //Cuando T sea una clase
     {

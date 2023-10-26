@@ -10,7 +10,7 @@ namespace Stock.Repositories
 {
     //Cuando T sea una clase = Clase es igual a User u otros.
     //En este caso T va a ser Usuario = IRepository<User>
-    public class UserRepository : IRepository<User>
+    public class UserRepository : IUnitOfWork<User>
     {
         public List<User> Read => throw new NotImplementedException();
 
