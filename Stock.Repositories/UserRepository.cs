@@ -1,5 +1,5 @@
-﻿using Stock.COMMON.Entities;
-using Stock.COMMON.Interfaces;
+﻿using Stock.Entities.Entities;
+using Stock.Entities.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +10,7 @@ namespace Stock.Repositories
 {
     //Cuando T sea una clase = Clase es igual a User u otros.
     //En este caso T va a ser Usuario = IRepository<User>
-    public class UserRepository : IUnitOfWork<User>
+    /*public class UserRepository : IUnitOfWork<User>
     {
         public List<User> Read => throw new NotImplementedException();
 
@@ -27,6 +27,6 @@ namespace Stock.Repositories
         public bool Update(User originalEntity, User modifiedEntity)
         {
             throw new NotImplementedException();
-        }
+        }*/
     }
 }

@@ -1,5 +1,5 @@
-﻿using Stock.COMMON.Interfaces;
-using Stock.COMMON.Entities;
+﻿using Stock.Entities.Interfaces;
+using Stock.Entities.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Stock.Repositories
 {
-    public class ProviderRepository : IUnitOfWork<Provider>
+    public class ProviderRepository
     {
         public List<Provider> Read => throw new NotImplementedException();
 

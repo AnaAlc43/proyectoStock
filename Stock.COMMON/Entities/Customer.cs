@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Stock.COMMON.Entities
+namespace Stock.Entities.Entities
 {
     public class Customer
     {

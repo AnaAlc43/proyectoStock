@@ -47,9 +47,9 @@
     <Compile Include="UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Stock.COMMON\Stock.COMMON.csproj">
+    <ProjectReference Include="..\Stock.COMMON\Stock.Entities.csproj">
       <Project>{11A05A52-F8A3-45FF-A4DA-98794FB3E7BF}</Project>
-      <Name>Stock.COMMON</Name>
+      <Name>Stock.Entities</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -3,18 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Stock.COMMON.Entities;
-using Stock.COMMON.Interfaces;
+using Stock.Entities.Entities;
 
-namespace Stock.COMMON.Interfaces.Repositories
+namespace Stock.Entities.Interfaces.Repositories
 {
-    public  interface IProductRepository : IUnitOfWork<Product>
-
+    public interface IProductRepository : IUnitOfWork
     {
         Task<Product> GetById(int productId);
-
-        Task Update(Product product);
-        Task Delete(int actorId);
-        Task<List<Actor>> GetAllActors();
+        Task Create(Product product);
+        Task Update(string nombre, string vencimiento, string lote);
+        Task Delete(int product);
+        Task<List<Product>> GetAllproducts();
     }
 }

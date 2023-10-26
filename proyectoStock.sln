@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03.InterfacesAdapters", "03
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "04.Frameworks&Drivers", "04.Frameworks&Drivers", "{52E1B9D7-C283-4458-B21D-420CABD6CB32}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock.COMMON", "Stock.COMMON\Stock.COMMON.csproj", "{11A05A52-F8A3-45FF-A4DA-98794FB3E7BF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Stock.Entities", "Stock.COMMON\Stock.Entities.csproj", "{11A05A52-F8A3-45FF-A4DA-98794FB3E7BF}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Controllers", "Controllers", "{03FBAEE3-5FF1-4C65-92C1-9FE03DFC3FED}"
 EndProject
