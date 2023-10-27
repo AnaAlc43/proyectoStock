@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using Stock.Repositories.Context;
+using Stock.Repositories.Context.EntitiesDB;
 
-namespace Stock.Repositories.Models;
+namespace Stock.Repositories.Context;
 
 public partial class ControlstockContext : DbContext
 {
@@ -31,7 +33,7 @@ public partial class ControlstockContext : DbContext
 
     public virtual DbSet<Provincia> Provincias { get; set; }
 
-    public virtual DbSet<Role> Roles { get; set; }
+    public virtual DbSet<Roles> Roles { get; set; }
 
     public virtual DbSet<Stock> Stocks { get; set; }
 

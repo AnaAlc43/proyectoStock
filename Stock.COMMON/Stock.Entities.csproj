@@ -43,6 +43,18 @@
   <ItemGroup>
     <Compile Include="COMMON\EntityCOMMON.cs" />
     <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\EntitiesDB\Categoria.cs" />
+    <Compile Include="Entities\EntitiesDB\Cliente.cs" />
+    <Compile Include="Entities\EntitiesDB\Departamento.cs" />
+    <Compile Include="Entities\EntitiesDB\DetalleVenta.cs" />
+    <Compile Include="Entities\EntitiesDB\Marca.cs" />
+    <Compile Include="Entities\EntitiesDB\Producto.cs" />
+    <Compile Include="Entities\EntitiesDB\Proveedor.cs" />
+    <Compile Include="Entities\EntitiesDB\Provincia.cs" />
+    <Compile Include="Entities\EntitiesDB\Role.cs" />
+    <Compile Include="Entities\EntitiesDB\Stock.cs" />
+    <Compile Include="Entities\EntitiesDB\Usuario.cs" />
+    <Compile Include="Entities\EntitiesDB\Venta.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Provider.cs" />
     <Compile Include="Entities\Sales.cs" />
