@@ -8,15 +8,11 @@ namespace Stock.BusinessRules.DTOs.UserDTOs
 {
     public class UserDTO
     {
-        // Definir el DTO en un archivo separado
+        /* DTO que representa la información de un actor que se envía como respuesta 
+        desde la capa de "negocio" -> al "controlador o presentación." */
 
         public int Id { get; set; }
-        public int IdRol { get; set; }
-        public string Name { get; set; }
-        public string LastName { get; set; }
-        public string Email { get; set; }
         public string Username { get; set; }
-        public string Password { get; set; }
-    
+           
     }
 }

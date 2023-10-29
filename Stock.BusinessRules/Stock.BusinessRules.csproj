@@ -42,10 +42,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DTOs\UserDTOs\CreateUserResquest.cs" />
+    <Compile Include="DTOs\UserDTOs\UpdateUserRequest.cs" />
     <Compile Include="DTOs\UserDTOs\UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DTOs\ProviderDTOs\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Wrappers\" />
   </ItemGroup>
