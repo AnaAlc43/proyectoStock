@@ -1,19 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
-using Stock.Repositories.Context;
-using Stock.Repositories.Context.EntitiesDB;
 
-namespace Stock.Repositories.Context;
+namespace Stock.Repositories.Context
 
 public partial class ControlstockContext : DbContext
+
 {
     public ControlstockContext()
     {
     }
 
-    public ControlstockContext(DbContextOptions<ControlstockContext> options)
-        : base(options)
+    public ControlstockContext(DbContextOptions<ControlstockContext> options) : base(options)
     {
     }
 
@@ -42,7 +40,10 @@ public partial class ControlstockContext : DbContext
     public virtual DbSet<Venta> Ventas { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
+
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, //see http://go.microsoft.com/fwlink/?LinkId=723263.
+
+
         => optionsBuilder.UseMySQL("server=127.0.0.1;port=3306;database=controlstock;user=root;password=root");
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -274,7 +275,7 @@ public partial class ControlstockContext : DbContext
                 .HasColumnName("nombre");
         });
 
-        modelBuilder.Entity<Role>(entity =>
+        modelBuilder.Entity<Roles>(entity =>
         {
             entity.HasKey(e => e.Id).HasName("PRIMARY");
 
@@ -394,4 +395,6 @@ public partial class ControlstockContext : DbContext
     }
 
     partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
+
+
 }
