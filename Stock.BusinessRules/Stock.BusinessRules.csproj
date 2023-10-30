@@ -57,6 +57,7 @@
     <Compile Include="Interfaces\Controllers\UserControllers\IUpdateUserController.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Wrappers\User\WCreateDeleteUser.cs" />
+    <Compile Include="Wrappers\User\WDeleteUser.cs" />
     <Compile Include="Wrappers\WBase.cs" />
   </ItemGroup>
   <ItemGroup />

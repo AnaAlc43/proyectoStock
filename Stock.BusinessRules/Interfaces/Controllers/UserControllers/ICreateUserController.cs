@@ -11,9 +11,9 @@ namespace Stock.BusinessRules.Interfaces.Controllers.UserControllers
     public interface ICreateUserController
     {
         //El propósito principal de esta interfaz es definir un contrato para que
-        //las clases que la implementan tengan un método llamado CreateActor.
+        //las clases que la implementan tengan un método llamado CreateUser.
 
-        //Este método acepta un objeto CreateActorRequest como parámetro de entrada y
+        //Este método acepta un objeto CreateUserRequest como parámetro de entrada y
         //devuelve una tarea asíncrona (Task) que contiene un objeto WCreateDeleteActor.
 
         Task<WCreateDeleteUser> CreateUser(CreateUserRequest request);
