@@ -17,17 +17,17 @@ namespace Stock.BusinessRules.DTOs.UserDTOs
     cuando se crea una nueva instancia de la clase. Este constructor no tiene parámetros y no realiza ninguna
     operación.*/
 
-    public class CreateUserResquest
+    public class CreateUserRequest
     {     
         public string Nombre { get; set; }       
 
-        public string Apellido { get; set; }
+        /*public string Apellido { get; set; }
 
         public string Email { get; set; }
 
-        /*public string Contraseña { get; set; }*/
+        public string Contraseña { get; set; }
 
-        /*Almacenar contraseñas en texto sin formato.
+        Almacenar contraseñas en texto sin formato.
         Solo el hash de la contraseña, usar la clase "PasswordHasher" de .NET para
         generar y validar hashes de contraseñas.
 

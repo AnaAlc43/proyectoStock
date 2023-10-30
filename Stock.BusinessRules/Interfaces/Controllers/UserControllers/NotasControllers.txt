@@ -1,0 +1,20 @@
+
+    El propósito principal de esta interfaz es definir un contrato para que las
+
+clases que la implementan tengan un método llamado CreateActor.
+
+    Este método acepta un objeto CreateActorRequest como parámetro de entrada y devuelve
+
+una tarea asíncrona (Task) que contiene un objeto WrapperCreateDeleteActor.
+
+
+
+    - public interface ICreateActorController: Esta es la declaración de la interfaz en sí.
+
+Todas las clases que implementen esta interfaz deben ser declaradas como public.
+
+    - "Task<WrapperCreateDeleteActor> CreateActor(CreateActorRequest request)": Este es el método que se define en la interfaz.
+
+El método CreateActor toma un objeto CreateActorRequest como parámetro de entrada y devuelve
+
+una tarea asíncrona (Task) que contiene un objeto WrapperCreateDeleteActor.
