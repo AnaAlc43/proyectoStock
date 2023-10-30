@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Stock.BusinessRules",
+    "\\Stock.BusinessRules\\DTOs",
+    "\\Stock.BusinessRules\\DTOs\\UserDTOs"
   ],
   "SelectedNode": "\\proyectoStock.sln",
   "PreviewInSolutionExplorer": false

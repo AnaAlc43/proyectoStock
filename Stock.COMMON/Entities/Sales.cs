@@ -14,9 +14,9 @@ namespace Stock.Entities.Entities
 
         public int Cliente { get; set; }
 
-        public string DetallePedido { get; set; }
+        public int DetallePedido { get; set; }
 
-        public int Fecha { get; set; }
+        public DateTime Fecha { get; set; } = DateTime.UtcNow;
 
         public string EstadoVenta { get; set; }
     }

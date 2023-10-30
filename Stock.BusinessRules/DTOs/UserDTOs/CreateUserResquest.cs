@@ -19,13 +19,13 @@ namespace Stock.BusinessRules.DTOs.UserDTOs
 
     public class CreateUserResquest
     {     
-        public string FirstName { get; set; }       
+        public string Nombre { get; set; }       
 
-        public string LastName { get; set; }
-       
-        public string UserName { get; set; }
+        public string Apellido { get; set; }
 
-        public string Password { get; set; }
+        public string Email { get; set; }
+
+        /*public string Contraseña { get; set; }*/
 
         /*Almacenar contraseñas en texto sin formato.
         Solo el hash de la contraseña, usar la clase "PasswordHasher" de .NET para
@@ -34,7 +34,6 @@ namespace Stock.BusinessRules.DTOs.UserDTOs
         para garantizar la seguridad, implementar el control de acceso y de autenticación adecuado para la aplicación.
         Se puede usar la autenticación basada en tokens de JSON Web Token (JWT) para proteger la API.*/
 
-        public string Email { get; set; }
     }
 
 }

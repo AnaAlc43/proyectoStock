@@ -12,7 +12,9 @@ namespace Stock.BusinessRules.DTOs.UserDTOs
         desde la capa de "negocio" -> al "controlador o presentación." */
 
         public int Id { get; set; }
-        public string Username { get; set; }
+        public string Nombre { get; set; }
+        public int IdRol { get; set; }
+        public string NombreRol { get; set; }
            
     }
 }

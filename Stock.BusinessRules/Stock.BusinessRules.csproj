@@ -41,13 +41,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTOs\ProviderDTOs\CreateProviderResquest.cs" />
+    <Compile Include="DTOs\ProviderDTOs\ProviderDTO.cs" />
+    <Compile Include="DTOs\ProviderDTOs\UpdateProviderResquest.cs" />
+    <Compile Include="DTOs\SalesDTOs\SalesHeaderDTO.cs" />
+    <Compile Include="DTOs\SalesDTOs\SalesOrderDetailDTO.cs" />
     <Compile Include="DTOs\UserDTOs\CreateUserResquest.cs" />
     <Compile Include="DTOs\UserDTOs\UpdateUserRequest.cs" />
     <Compile Include="DTOs\UserDTOs\UserDTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DTOs\ProviderDTOs\" />
     <Folder Include="Interfaces\" />
     <Folder Include="Wrappers\" />
   </ItemGroup>

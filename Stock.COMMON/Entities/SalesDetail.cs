@@ -12,7 +12,7 @@ namespace Stock.Entities.Entities
         public int Ventas { get; }
         public int PrecioVenta { get; set; }
         public int Cantidad { get; set; }
-        public DateTime Fecha { get; set; }
+        public DateTime Fecha { get; set; } = DateTime.UtcNow;
         public string EstadoDetalleVenta { get; set; }
     }
-}
+} 
