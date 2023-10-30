@@ -1,0 +1,2 @@
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\obj\Debug\Stock.Entities.csproj.AssemblyReference.cache
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\obj\Debug\Stock.Entities.csproj.CoreCompileInputs.cache
