@@ -3,8 +3,10 @@
     "",
     "\\Stock.BusinessRules",
     "\\Stock.BusinessRules\\DTOs",
-    "\\Stock.BusinessRules\\DTOs\\UserDTOs"
+    "\\Stock.BusinessRules\\DTOs\\UserDTOs",
+    "\\Stock.BusinessRules\\Wrappers",
+    "\\Stock.BusinessRules\\Wrappers\\User"
   ],
-  "SelectedNode": "\\proyectoStock.sln",
+  "SelectedNode": "\\Stock.BusinessRules\\Wrappers\\User\\WDeleteUser.cs",
   "PreviewInSolutionExplorer": false
 }
