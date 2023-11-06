@@ -94,7 +94,12 @@
     <Compile Include="Wrappers\User\WUpdateUser.cs" />
     <Compile Include="Wrappers\WBase.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Stock.COMMON\Stock.Entities.csproj">
+      <Project>{11a05a52-f8a3-45ff-a4da-98794fb3e7bf}</Project>
+      <Name>Stock.Entities</Name>
+    </ProjectReference>
+  </ItemGroup>
   <ItemGroup>
     <Content Include="Interfaces\Controllers\UserControllers\NotasControllers.txt" />
   </ItemGroup>

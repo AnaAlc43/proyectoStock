@@ -4,6 +4,36 @@
     "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.UsesCase\\Stock.UsesCase.csproj": {}
   },
   "projects": {
+    "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj",
+        "projectName": "Stock.BusinessRules",
+        "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj",
+        "projectName": "Stock.Entities",
+        "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
     "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.UsesCase\\Stock.UsesCase.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,7 +62,14 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj": {
+                "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj"
+              },
+              "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj": {
+                "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

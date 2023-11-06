@@ -1,11 +1,44 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "Stock.BusinessRules/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Stock.BusinessRules.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stock.BusinessRules.dll": {}
+        }
+      },
+      "Stock.Entities/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Stock.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stock.Entities.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Stock.BusinessRules/1.0.0": {
+      "type": "project",
+      "path": "../Stock.BusinessRules/Stock.BusinessRules.csproj",
+      "msbuildProject": "../Stock.BusinessRules/Stock.BusinessRules.csproj"
+    },
+    "Stock.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Stock.COMMON/Stock.Entities.csproj",
+      "msbuildProject": "../Stock.COMMON/Stock.Entities.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "Stock.BusinessRules >= 1.0.0",
+      "Stock.Entities >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\anaan\\.nuget\\packages\\": {},
@@ -39,7 +72,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj": {
+              "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj"
+            },
+            "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj": {
+              "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

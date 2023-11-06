@@ -8,7 +8,7 @@ using Stock.BusinessRules.DTOs.ValidationErrorDTO;
 using Stock.BusinessRules.Interfaces.ValidationSpecification;
 
 
-namespace Stock.UseCases.Specifications.UserSpecifications
+namespace Stock.UsesCase.Specification.UserSpecifications
 {
     public class UpdateActorSpecifications : ISpecification<UpdateActorRequest>
     {

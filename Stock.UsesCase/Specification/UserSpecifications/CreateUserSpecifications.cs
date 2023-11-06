@@ -8,15 +8,15 @@ using Stock.BusinessRules.DTOs.ValidationErrorDTO;
 using Stock.BusinessRules.Interfaces.ValidationSpecification;
 
 
-namespace Stock.UseCases.Specifications.UserSpecifications
+namespace Stock.UsesCase.Specification.UserSpecifications
 {
     public class CreateUserSpecifications : ISpecification<CreateUserRequest>
     {
         readonly CreateUserRequest _entity;
-        readonly List<ValidationErrorDTO> _errors = new List<ValidationErrorDTO>();
+        readonly List<ValidationErrorDTOs> _errors = new List<ValidationErrorDTOs>();
         public CreateUserSpecifications(CreateUserRequest entity)
         {
-            this._entity = entity;
+            _entity = entity;
         }
 
         public List<ValidationErrorDTOs> IsValid()
@@ -32,7 +32,7 @@ namespace Stock.UseCases.Specifications.UserSpecifications
             }
             else if (_entity.NombreActor.Length > 45)
             {
-                _errors.Add(new ValidationErrorDTO
+                _errors.Add(new ValidationErrorDTOs
                 {
                     PropertyName = "Nomre Actor",
                     ErrorMessage = "El campo no puede contener más de 45 caracteres."
