@@ -798,19 +798,6 @@
           "bin/placeholder/Stock.BusinessRules.dll": {}
         }
       },
-      "Stock.Controllers/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Stock.BusinessRules": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Stock.Controllers.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Stock.Controllers.dll": {}
-        }
-      },
       "Stock.Entities/1.0.0": {
         "type": "project",
         "compile": {
@@ -818,20 +805,6 @@
         },
         "runtime": {
           "bin/placeholder/Stock.Entities.dll": {}
-        }
-      },
-      "Stock.Presenters/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Stock.BusinessRules": "1.0.0",
-          "Stock.Repositories": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Stock.Presenters.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Stock.Presenters.dll": {}
         }
       },
       "Stock.Repositories/1.0.0": {
@@ -848,20 +821,6 @@
         },
         "runtime": {
           "bin/placeholder/Stock.Repositories.dll": {}
-        }
-      },
-      "Stock.UsesCase/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Stock.BusinessRules": "1.0.0",
-          "Stock.Entities": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/Stock.UsesCase.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/Stock.UsesCase.dll": {}
         }
       }
     }
@@ -2475,38 +2434,21 @@
       "path": "../Stock.BusinessRules/Stock.BusinessRules.csproj",
       "msbuildProject": "../Stock.BusinessRules/Stock.BusinessRules.csproj"
     },
-    "Stock.Controllers/1.0.0": {
-      "type": "project",
-      "path": "../Stock.Controllers/Stock.Controllers.csproj",
-      "msbuildProject": "../Stock.Controllers/Stock.Controllers.csproj"
-    },
     "Stock.Entities/1.0.0": {
       "type": "project",
       "path": "../Stock.COMMON/Stock.Entities.csproj",
       "msbuildProject": "../Stock.COMMON/Stock.Entities.csproj"
     },
-    "Stock.Presenters/1.0.0": {
-      "type": "project",
-      "path": "../Stock.Presenters/Stock.Presenters.csproj",
-      "msbuildProject": "../Stock.Presenters/Stock.Presenters.csproj"
-    },
     "Stock.Repositories/1.0.0": {
       "type": "project",
       "path": "../Stock.Repositories/Stock.Repositories.csproj",
       "msbuildProject": "../Stock.Repositories/Stock.Repositories.csproj"
-    },
-    "Stock.UsesCase/1.0.0": {
-      "type": "project",
-      "path": "../Stock.UsesCase/Stock.UsesCase.csproj",
-      "msbuildProject": "../Stock.UsesCase/Stock.UsesCase.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "Stock.Controllers >= 1.0.0",
-      "Stock.Presenters >= 1.0.0",
-      "Stock.Repositories >= 1.0.0",
-      "Stock.UsesCase >= 1.0.0"
+      "Stock.BusinessRules >= 1.0.0",
+      "Stock.Repositories >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2516,11 +2458,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.DependencyInversion\\Stock.DependencyInversion.csproj",
-      "projectName": "Stock.DependencyInversion",
-      "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.DependencyInversion\\Stock.DependencyInversion.csproj",
+      "projectUniqueName": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.Presenters\\Stock.Presenters.csproj",
+      "projectName": "Stock.Presenters",
+      "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.Presenters\\Stock.Presenters.csproj",
       "packagesPath": "C:\\Users\\anaan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.DependencyInversion\\obj\\",
+      "outputPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.Presenters\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2542,17 +2484,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.Controllers\\Stock.Controllers.csproj": {
-              "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.Controllers\\Stock.Controllers.csproj"
-            },
-            "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.Presenters\\Stock.Presenters.csproj": {
-              "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.Presenters\\Stock.Presenters.csproj"
+            "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj": {
+              "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj"
             },
             "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.Repositories\\Stock.Repositories.csproj": {
               "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.Repositories\\Stock.Repositories.csproj"
-            },
-            "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.UsesCase\\Stock.UsesCase.csproj": {
-              "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.UsesCase\\Stock.UsesCase.csproj"
             }
           }
         }

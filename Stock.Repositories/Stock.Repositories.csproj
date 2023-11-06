@@ -15,4 +15,13 @@
     <PackageReference Include="MySql.EntityFrameworkCore" Version="7.0.10" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="EFCore\Configurations\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stock.BusinessRules\Stock.BusinessRules.csproj" />
+    <ProjectReference Include="..\Stock.COMMON\Stock.Entities.csproj" />
+  </ItemGroup>
+
 </Project>

@@ -44,7 +44,7 @@ namespace Stock.Repositories.Context
 
 
         //    => optionsBuilder.UseMySQL("server=127.0.0.1;port=3306;database=controlstock;user=root;password=root");
-        /*
+        
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Categoria>(entity =>
@@ -394,6 +394,6 @@ namespace Stock.Repositories.Context
         }
 
         partial void OnModelCreatingPartial(ModelBuilder modelBuilder);
-        */
+        
     }
 }

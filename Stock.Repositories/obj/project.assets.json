@@ -863,6 +863,27 @@
         "runtime": {
           "lib/net7.0/ZstdSharp.dll": {}
         }
+      },
+      "Stock.BusinessRules/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Stock.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Stock.BusinessRules.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stock.BusinessRules.dll": {}
+        }
+      },
+      "Stock.Entities/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Stock.Entities.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stock.Entities.dll": {}
+        }
       }
     }
   },
@@ -2564,13 +2585,25 @@
         "zstdsharp.port.0.7.1.nupkg.sha512",
         "zstdsharp.port.nuspec"
       ]
+    },
+    "Stock.BusinessRules/1.0.0": {
+      "type": "project",
+      "path": "../Stock.BusinessRules/Stock.BusinessRules.csproj",
+      "msbuildProject": "../Stock.BusinessRules/Stock.BusinessRules.csproj"
+    },
+    "Stock.Entities/1.0.0": {
+      "type": "project",
+      "path": "../Stock.COMMON/Stock.Entities.csproj",
+      "msbuildProject": "../Stock.COMMON/Stock.Entities.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.EntityFrameworkCore.Design >= 7.0.13",
       "MySql.Data >= 8.2.0",
-      "MySql.EntityFrameworkCore >= 7.0.10"
+      "MySql.EntityFrameworkCore >= 7.0.10",
+      "Stock.BusinessRules >= 1.0.0",
+      "Stock.Entities >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -2605,7 +2638,14 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj": {
+              "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj"
+            },
+            "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj": {
+              "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
