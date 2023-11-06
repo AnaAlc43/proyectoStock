@@ -10,7 +10,6 @@ namespace Stock.BusinessRules.Interfaces.Controllers.ProductControllers
 {
     public interface ICreateProductController
     {
-        Task<WCreateDeleteProduct> CreateProvider (CreateProductRequest request);
-
+        /*Task<WCreateDeleteProduct> CreateProvider (CreateProductRequest request);*/
     }
 }

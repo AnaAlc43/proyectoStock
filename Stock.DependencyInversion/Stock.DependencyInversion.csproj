@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Stock.Controllers\Stock.Controllers.csproj" />
+    <ProjectReference Include="..\Stock.Repositories\Stock.Repositories.csproj" />
+    <ProjectReference Include="..\Stock.UsesCase\Stock.UsesCase.csproj" />
+  </ItemGroup>
+
+</Project>

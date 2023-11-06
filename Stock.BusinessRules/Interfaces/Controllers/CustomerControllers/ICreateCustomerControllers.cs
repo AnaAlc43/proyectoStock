@@ -13,6 +13,7 @@ namespace Stock.BusinessRules.Interfaces.Controllers.CustomerControllers
         
         // Las clases que implementen esta interfaz deben proporcionar una implementación
         // para el método "CreateCustomer" que cumpla con el contrato establecido por la interfaz.
-        Task<WCreateDeleteCustomer> CreateCustomer(CreateCustomerRequest request);
+
+        /*Task<WCreateDeleteCustomer> CreateCustomer(CreateCustomerRequest request);*/
     }
 }

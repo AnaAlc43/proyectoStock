@@ -4,6 +4,9 @@
     "net7.0": {
       "Stock.BusinessRules/1.0.0": {
         "type": "project",
+        "dependencies": {
+          "Stock.Entities": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/Stock.BusinessRules.dll": {}
         },

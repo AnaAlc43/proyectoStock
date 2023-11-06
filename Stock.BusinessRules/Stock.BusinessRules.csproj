@@ -71,7 +71,7 @@
     <Compile Include="Interfaces\Getways\ProviderGetways\OutputPort\ICreateProviderOutputPort.cs" />
     <Compile Include="Interfaces\Getways\ProviderGetways\OutputPort\IDeleteProviderOutputPort.cs" />
     <Compile Include="Interfaces\Getways\ProviderGetways\OutputPort\IUpdateProviderOutputPort.cs" />
-    <Compile Include="Interfaces\Getways\UserGetways\InputPorts\ICreateUserInputPort.cs" />
+    <Compile Include="Interfaces\Getways\UserGetways\InputPorts\ICreateActorInputPort.cs" />
     <Compile Include="Interfaces\Getways\UserGetways\InputPorts\IDeleteUserInputPort.cs" />
     <Compile Include="Interfaces\Getways\UserGetways\InputPorts\IUpdateUserInputPort.cs" />
     <Compile Include="Interfaces\Getways\UserGetways\OutputPort\ICreateUserOutputPort.cs" />

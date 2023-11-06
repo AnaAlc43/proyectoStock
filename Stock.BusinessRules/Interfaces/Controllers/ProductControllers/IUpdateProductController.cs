@@ -9,7 +9,7 @@ namespace Stock.BusinessRules.Interfaces.Controllers.ProductControllers
 {
     public interface IUpdateProductController
     { 
-        Task<WCreateDeleteProduct> UpdateProduct(UpdateProductRequest request);
+        /*Task<WCreateDeleteProduct> UpdateProduct(UpdateProductRequest request);*/
     
     }
 }

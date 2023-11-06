@@ -5,44 +5,44 @@ using System.Text;
 using System.Threading.Tasks;
 using Stock.BusinessRules.DTOs.UserDTOs;
 using Stock.BusinessRules.DTOs.ValidationErrorDTO;
-using Stock.BusinessRules.Interfaces.ValidationSpecification;
+using VideoClub.BusinessRules.Interfaces.ValidationSpecification;
 
 
 namespace Stock.UsesCase.Specification.UserSpecifications
 {
-    public class UpdateActorSpecifications : ISpecification<UpdateActorRequest>
+    public class UpdateUserSpecifications : ISpecification<UpdateUserRequest>
     {
-        readonly UpdateActorRequest _entity;
-        readonly List<ValidationErrorDTO> _errors = new List<ValidationErrorDTO>();
+        readonly UpdateUserRequest _entity;
+        readonly List<ValidationErrorDTOs> _errors = new List<ValidationErrorDTOs>();
 
-        public UpdateActorSpecifications(UpdateActorRequest entity)
+        public UpdateUserSpecifications(UpdateUserRequest entity)
         {
             _entity = entity;
         }
 
-        public List<ValidationErrorDTO> IsValid()
+        public List<ValidationErrorDTOs> IsValid()
         {
-            if (_entity.IdActor == 0)
+            if (_entity.Id == 0)
             {
-                _errors.Add(new ValidationErrorDTO()
+                _errors.Add(new ValidationErrorDTOs()
                 {
                     PropertyName = "Id",
                     ErrorMessage = "Debe especficar el Id que desea actualizar"
                 });
             }
 
-            if (string.IsNullOrEmpty(_entity.NombreActor))
+            if (string.IsNullOrEmpty(_entity.Nombre))
             {
-                _errors.Add(new ValidationErrorDTO
+                _errors.Add(new ValidationErrorDTOs
                 {
                     PropertyName = "Nomre Actor",
                     ErrorMessage = "El campo no puede ser nulo ni vacío."
 
                 });
             }
-            if (!string.IsNullOrEmpty(_entity.NombreActor) && _entity.NombreActor.Length > 45)
+            if (!string.IsNullOrEmpty(_entity.Nombre) && _entity.Nombre.Length > 45)
             {
-                _errors.Add(new ValidationErrorDTO
+                _errors.Add(new ValidationErrorDTOs
                 {
                     PropertyName = "Nomre Actor",
                     ErrorMessage = "El campo no puede contener más de 45 caracteres."

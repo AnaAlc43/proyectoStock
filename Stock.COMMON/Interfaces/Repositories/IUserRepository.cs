@@ -13,7 +13,7 @@ namespace Stock.Entities.Interfaces.Repositories
 
         Task<User> GetById(int id);
         
-        Task Add(User user);
+        Task Create(User user);
         Task CreateRol(UserRoles nombre);
         Task Update(User user);
         

@@ -1,5 +1,5 @@
-﻿using Stock.BusinessRules.DTOs.UserDTOs;
-using Stock.BusinessRules.Wrappers.User;
+﻿using Stock.BusinessRules.DTOs.ProviderDTOs;
+using Stock.BusinessRules.Wrappers.Provider;
 using System;
 using System.Collections.Generic;
 using System.Linq;

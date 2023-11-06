@@ -6,10 +6,9 @@ using System.Threading.Tasks;
 
 namespace Stock.BusinessRules.Interfaces.Controllers.ProductControllers
 {
-    public class IDeleteProductController
+    public interface IDeleteProductController
     {
-        public interface IDeleteProductController
-        {
-            Task<WDeleteProduct> DeleteProduct(int Id);
-        }
+        //Task<WDeleteProduct> DeleteProduct(int Id);
+    }
+
 }
