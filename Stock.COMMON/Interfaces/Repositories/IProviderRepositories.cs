@@ -13,6 +13,6 @@ namespace Stock.COMMON.Interfaces.Repositories
         Task Create(Provider provider);
         Task Update(Provider provider);
         Task Delete(Provider provider);
-        Task<Provider> GetById(int provider);        
+        Task<Provider> GetAllProvider(int provider);        
     }
 }
