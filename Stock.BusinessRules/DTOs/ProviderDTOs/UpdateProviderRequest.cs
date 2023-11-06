@@ -6,14 +6,10 @@ using System.Threading.Tasks;
 
 namespace Stock.BusinessRules.DTOs.ProviderDTOs
 {
-    /// <summary>
-    ///  DTO que se utiliza para transferir datos de entrada cuando se está creando un nuevo
-    ///  actor en la capa de controlador o presentación y se necesita enviar esos datos a la
-    ///  capa de negocio.
-    /// </summary>
+    public class UpdateProviderRequest
 
-    public class CreateProviderResquest
-    {
+    { 
+        public int Id { get; set; }
         public string Nombre { get; set; }
 
         //public string Email { get; set; }

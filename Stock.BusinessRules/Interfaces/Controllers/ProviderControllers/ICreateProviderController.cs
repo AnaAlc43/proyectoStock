@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Stock.BusinessRules.Interfaces.Controllers.ProviderControllers
 {
-    public interface ICreateProductController
+    public interface ICreateProviderController
     {
         Task<WCreateDeleteProvider> CreateProvider (CreateProviderRequest request);
     }

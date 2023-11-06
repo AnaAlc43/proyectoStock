@@ -4,9 +4,12 @@
     "\\Stock.BusinessRules",
     "\\Stock.BusinessRules\\DTOs",
     "\\Stock.BusinessRules\\DTOs\\UserDTOs",
+    "\\Stock.BusinessRules\\Interfaces",
+    "\\Stock.BusinessRules\\Interfaces\\Controllers",
+    "\\Stock.BusinessRules\\Interfaces\\Controllers\\UserControllers",
     "\\Stock.BusinessRules\\Wrappers",
     "\\Stock.BusinessRules\\Wrappers\\User"
   ],
-  "SelectedNode": "\\proyectoStock.sln",
+  "SelectedNode": "\\Stock.BusinessRules\\Interfaces\\Controllers\\UserControllers\\IDeleteUserController.cs",
   "PreviewInSolutionExplorer": false
 }
