@@ -1,7 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Stock.BusinessRules.Interfaces.Getways.UserGetways.OutputPort;
 using Stock.Presenters.User;
-using Stock.BusinessRules.Interfaces.Presenters;
+using VideoClub_Presenters.User;
+using Stock.BusinessRules.Interfaces.Presenters.User;
 
 namespace Stock.Presenters
 {
@@ -9,21 +10,12 @@ namespace Stock.Presenters
     {
         public static IServiceCollection AddServicesPresenter(this IServiceCollection services)
         {
-            /*services.AddScoped<GetAllActorPresenter>();
+           
+            services.AddScoped<ICreateUserPresenter, CreateUserPresenter>();
 
-            services.AddScoped<IGetAllActorsOutputPort, GetAllActorPresenter>();
+            services.AddScoped<IDeleteUserPresenter, DeleteUserPresenter>();
 
-            services.AddScoped<IGetAllActorsPresenter, GetAllActorPresenter>();
-            */
-
-
-            services.AddScoped<ICreateActorPresenter, CreateActorPresenter>();
-
-            services.AddScoped<IDeleteActorPresenter, DeleteActorPresenter>();
-
-            services.AddScoped<IGetActorByIdPresenter, GetActorByIdPresenter>();
-
-            services.AddScoped<IUpdateActorPresenter, UpdateActorPresenter>();
+            services.AddScoped<IUpdateUserPresenter, UpdateUserPresenter>();
 
             return services;
         }

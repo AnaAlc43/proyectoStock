@@ -18,6 +18,7 @@ namespace Stock.Entities.Interfaces.Repositories
         Task Update(User user);
         
         Task Delete(int id);
+        Task IsDelete(int id);
         
     }
 }

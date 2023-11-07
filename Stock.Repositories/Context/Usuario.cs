@@ -24,4 +24,5 @@ public partial class Usuario
     public virtual Roles? RolNavigation { get; set; }
 
     public virtual ICollection<Venta> Venta { get; set; } = new List<Venta>();
+    public bool IsDeleted { get; internal set; }
 }

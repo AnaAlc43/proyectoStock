@@ -1,13 +1,17 @@
-﻿using MySql.Data.MySqlClient
-
+﻿using Microsoft.EntityFrameworkCore;
+using MySql.Data.MySqlClient;
+using Stock.BusinessRules.PersonalException;
+using Stock.Entities.Entities;
+using Stock.Entities.Interfaces.Repositories;
+using Stock.Repositories.Context;
 
 namespace Stock.Repository.Repositories
 {
     public class ActorRepository : IUserRepository
     {
-        readonly StockContext _context;
+        readonly ControlstockContext _context;
 
-        public ActorRepository(VideoClubContext context)
+        public ActorRepository(ControlstockContext context)
         {
             _context = context;
         }
@@ -24,11 +28,16 @@ namespace Stock.Repository.Repositories
             }
         }
 
+        public Task CreateRol(UserRoles nombre)
+        {
+            throw new NotImplementedException();
+        }
+
         public async Task Delete(int userId)
         {
             try
             {
-                var result = await _context.Users.FirstOrDefaultAsync(a => a.Id == userId && a.IsDeleted == false);
+                var result = await _context.Users.FirstOrDefaultAsync(a => a.Idusuario == userId && a.IsDeleted == false);
                 if (result != null)
                 {
                     result.IsDeleted = true;
@@ -44,12 +53,13 @@ namespace Stock.Repository.Repositories
             }
         }
 
-        public async Task<List<User>> GetAllUsers()
+
+        /*public async Task<List<User>> GetAllUsers()
         {
             try
             {
                 List<User> result = new List<User>();
-                result = await _context.Actors.Where(a => a.IsDeleted == false).ToListAsync();
+                result = await _context.Users.Where(a => a.IsDeleted == false).ToListAsync();
                 return result;
             }
             catch (MySqlException ex)
@@ -57,14 +67,14 @@ namespace Stock.Repository.Repositories
 
                 throw new DBMySqlException(ex.Number, ex.Message);
             }
-        }
+        }*/
 
-        public async Task<User> GetById(int userId)
+        /*public async Task<User> GetById(int userId)
         {
             try
             {
                 User result = new User();
-                result = await _context.Actors.FirstOrDefaultAsync(a => a.Id == userId && a.IsDeleted == false);
+                result = await _context.Users.FirstOrDefaultAsync(a => a.Id == userId && a.IsDeleted == false);
                 return result;
 
             }
@@ -73,7 +83,7 @@ namespace Stock.Repository.Repositories
 
                 throw new DBMySqlException(ex.Number, ex.Message);
             }
-        }
+        }*/
 
         public async Task SaveChange()
         {
@@ -81,6 +91,15 @@ namespace Stock.Repository.Repositories
         }
 
         public Task Update(User user)
+        {
+            throw new NotImplementedException();
+        }
+        public Task<User> GetById(int id)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Task IsDelete(int id)
         {
             throw new NotImplementedException();
         }

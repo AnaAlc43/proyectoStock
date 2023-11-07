@@ -34,7 +34,7 @@ namespace Stock.Repositories.Context
 
         public virtual DbSet<Stock> Stocks { get; set; }
 
-        public virtual DbSet<Usuario> Usuarios { get; set; }
+        public virtual DbSet<Usuario> Users { get; set; }
 
         public virtual DbSet<Venta> Ventas { get; set; }
 

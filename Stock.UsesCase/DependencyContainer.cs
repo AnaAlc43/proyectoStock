@@ -1,6 +1,9 @@
-﻿/*using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
 using Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts;
+using Stock.UseCases.Specification.UserSpecifications;
 using Stock.UseCases.UseCases;
+using Stock.UseCases.UseCases.UserUseCase;
+using VideoClub.UseCases.UseCases.UserUseCase;
 
 namespace Stock.UsesCases
 {
@@ -8,19 +11,18 @@ namespace Stock.UsesCases
     {
         public static IServiceCollection AddServicesUseCases(this IServiceCollection services)
         {
-            services.AddScoped<ICreateActorInputPort, CreateActorIteractor>();
+            services.AddScoped<ICreateUserInputPort, CreateUserIteractor>();
 
-            services.AddScoped<IDeleteActorInputPort, DeleteActorInteractor>();
+            services.AddScoped<IDeleteUserInputPort, DeleteUserInteractor>();
 
-            services.AddScoped<IUpdateActorInputPort, UpdateActorInteractor>();
+            services.AddScoped<IUpdateUserInputPort, UpdateUserInteractor>();
 
-            services.AddScoped<IGetActorByIdInputPort, GetActorByIdInteractor>();
+            //services.AddScoped<IGetUserByIdInputPort, GetActorByIdInteractor>();
 
-            services.AddScoped<IGetAllActorsInputPort, GetAllActorsIterator>();
+            //services.AddScoped<IGetAllUserInputPort, GetAllUserIterator>();
 
             return services;
 
         }
     }
 }
-*/
