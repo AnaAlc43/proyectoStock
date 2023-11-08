@@ -1,0 +1,5 @@
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInversion\obj\Debug\net7.0\Stock.DependencyInversion.csproj.AssemblyReference.cache
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInversion\obj\Debug\net7.0\Stock.DependencyInversion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInversion\obj\Debug\net7.0\Stock.DependencyInversion.AssemblyInfoInputs.cache
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInversion\obj\Debug\net7.0\Stock.DependencyInversion.AssemblyInfo.cs
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInversion\obj\Debug\net7.0\Stock.DependencyInversion.csproj.CoreCompileInputs.cache

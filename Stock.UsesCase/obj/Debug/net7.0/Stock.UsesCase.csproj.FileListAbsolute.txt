@@ -1,0 +1,5 @@
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.UsesCase\obj\Debug\net7.0\Stock.UsesCase.csproj.AssemblyReference.cache
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.UsesCase\obj\Debug\net7.0\Stock.UsesCase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.UsesCase\obj\Debug\net7.0\Stock.UsesCase.AssemblyInfoInputs.cache
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.UsesCase\obj\Debug\net7.0\Stock.UsesCase.AssemblyInfo.cs
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.UsesCase\obj\Debug\net7.0\Stock.UsesCase.csproj.CoreCompileInputs.cache

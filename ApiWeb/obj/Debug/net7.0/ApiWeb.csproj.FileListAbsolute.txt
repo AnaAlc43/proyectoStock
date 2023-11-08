@@ -1,0 +1,6 @@
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\ApiWeb\obj\Debug\net7.0\ApiWeb.csproj.AssemblyReference.cache
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\ApiWeb\obj\Debug\net7.0\ApiWeb.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\ApiWeb\obj\Debug\net7.0\ApiWeb.AssemblyInfoInputs.cache
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\ApiWeb\obj\Debug\net7.0\ApiWeb.AssemblyInfo.cs
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\ApiWeb\obj\Debug\net7.0\ApiWeb.csproj.CoreCompileInputs.cache
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\ApiWeb\obj\Debug\net7.0\ApiWeb.MvcApplicationPartsAssemblyInfo.cache

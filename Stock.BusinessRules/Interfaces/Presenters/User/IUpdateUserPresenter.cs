@@ -8,6 +8,12 @@ using Stock.BusinessRules.Wrappers.User;
 
 namespace Stock.BusinessRules.Interfaces.Presenters.User
 {
+    public interface IUpdateUserPresenter2
+    {
+        WUpdateUser User { get; }
+        WUpdateUser User { get; }
+    }
+
     /// <summary>
     /// Este presenter se encarga de manejar la presentación después de actualizar la
     /// información de un User.

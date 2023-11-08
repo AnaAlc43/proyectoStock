@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="COMMON\EntityCOMMON.cs" />
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Provider.cs" />

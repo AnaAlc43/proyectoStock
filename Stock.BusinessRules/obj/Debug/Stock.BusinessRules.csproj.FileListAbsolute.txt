@@ -1,0 +1,2 @@
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\obj\Debug\Stock.BusinessRules.csproj.AssemblyReference.cache
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\obj\Debug\Stock.BusinessRules.csproj.CoreCompileInputs.cache
