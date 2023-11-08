@@ -3,6 +3,7 @@ using Stock.BusinessRules.Interfaces.Getways.UserGetways.OutputPort;
 using Stock.Presenters.User;
 using VideoClub_Presenters.User;
 using Stock.BusinessRules.Interfaces.Presenters.User;
+using Stock.BusinessRules.Wrappers.User;
 
 namespace Stock.Presenters
 {

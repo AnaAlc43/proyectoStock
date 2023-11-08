@@ -15,7 +15,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddServicesPresenter();
 builder.Services.AddServicesUseCases();
-builder.Services.AddDbContext<ControlstockContext>(options =>
+builder.Services.AddDbContext<Controlstock1Context>(options =>
             options.UseMySQL(""));
 
 var app = builder.Build();

@@ -1,18 +1,26 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Stock.Entities.Entities
+namespace Stock.COMMON.Entities
 {
-    public class SalesDetail
+    public partial class Salesdetail
     {
-        public int Producto { get; }
-        public int Ventas { get; }
-        public int PrecioVenta { get; set; }
-        public int Cantidad { get; set; }
-        public DateTime Fecha { get; set; } = DateTime.UtcNow;
-        public string EstadoDetalleVenta { get; set; }
+        public int IdDetail { get; set; }
+
+        public int? Sales { get; set; }
+
+        public int? Product { get; set; }
+
+        public decimal? PrecioVenta { get; set; }
+
+        public int? Cantidad { get; set; }
+
+        public DateTime? Fecha { get; set; }
+
+        public string EstadoDetalleVentas { get; set; }
+
+        public virtual Product ProductNavigation { get; set; }
+
+        public virtual Sales SalesNavigation { get; set; }
     }
-} 
+}

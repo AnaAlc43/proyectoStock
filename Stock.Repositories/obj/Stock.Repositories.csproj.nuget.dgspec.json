@@ -12,8 +12,8 @@
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj": {
-                "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj"
+              "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.COMMON.csproj": {
+                "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.COMMON.csproj"
               }
             }
           }
@@ -23,11 +23,11 @@
         "net472": {}
       }
     },
-    "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj": {
+    "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.COMMON.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj",
-        "projectName": "Stock.Entities",
-        "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj",
+        "projectUniqueName": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.COMMON.csproj",
+        "projectName": "Stock.COMMON",
+        "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.COMMON.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {}
@@ -70,8 +70,8 @@
               "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj": {
                 "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj"
               },
-              "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj": {
-                "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj"
+              "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.COMMON.csproj": {
+                "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.COMMON.csproj"
               }
             }
           }

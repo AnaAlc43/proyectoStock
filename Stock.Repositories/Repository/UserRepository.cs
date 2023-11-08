@@ -1,17 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using MySql.Data.MySqlClient;
 using Stock.BusinessRules.PersonalException;
-using Stock.Entities.Entities;
-using Stock.Entities.Interfaces.Repositories;
 using Stock.Repositories.Context;
+using Stock.COMMON.Entities;
+using Stock.COMMON;
+using Stock.COMMON.Interfaces.Repositories;
 
 namespace Stock.Repository.Repositories
 {
-    public class ActorRepository : IUserRepository
+    public class UserRepository : IUserRepository
     {
-        readonly ControlstockContext _context;
+        readonly Controlstock1Context _context;
 
-        public ActorRepository(ControlstockContext context)
+        public UserRepository(Controlstock1Context context)
         {
             _context = context;
         }
@@ -28,7 +29,7 @@ namespace Stock.Repository.Repositories
             }
         }
 
-        public Task CreateRol(UserRoles nombre)
+        public Task CreateRol(Roles nombre)
         {
             throw new NotImplementedException();
         }
@@ -37,7 +38,7 @@ namespace Stock.Repository.Repositories
         {
             try
             {
-                var result = await _context.Users.FirstOrDefaultAsync(a => a.Idusuario == userId && a.IsDeleted == false);
+                var result = await _context.Users.FirstOrDefaultAsync(a => a.IdUser == userId && a.IsDeleted == false);
                 if (result != null)
                 {
                     result.IsDeleted = true;

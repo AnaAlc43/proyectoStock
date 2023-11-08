@@ -1,4 +1,4 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -16,12 +16,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="EFCore\Configurations\" />
+    <ProjectReference Include="..\Stock.BusinessRules\Stock.BusinessRules.csproj" />
+    <ProjectReference Include="..\Stock.COMMON\Stock.COMMON.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Stock.BusinessRules\Stock.BusinessRules.csproj" />
-    <ProjectReference Include="..\Stock.COMMON\Stock.Entities.csproj" />
+    <Folder Include="EFCore\Configurations\" />
   </ItemGroup>
 
 </Project>

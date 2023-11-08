@@ -13,7 +13,7 @@ namespace Stock.BusinessRules.PersonalException
         public string MessageError { get; private set; }
         public DBMySqlException(int number, string message)
         {
-            /*switch (number)
+            switch (number)
             {
                 case 1045:
                     Number = 401;
@@ -31,7 +31,7 @@ namespace Stock.BusinessRules.PersonalException
                     Number = number;
                     MessageError = message;
                     break;
-            }*/
+            }
         }
     }
 }

@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "Stock.Controllers/1.0.0": {
+        "dependencies": {
+          "Stock.BusinessRules": "1.0.0"
+        },
+        "runtime": {
+          "Stock.Controllers.dll": {}
+        }
+      },
+      "Stock.BusinessRules/1.0.0": {
+        "dependencies": {
+          "Stock.COMMON": "1.0.0"
+        },
+        "runtime": {
+          "Stock.BusinessRules.dll": {}
+        }
+      },
+      "Stock.COMMON/1.0.0": {
+        "runtime": {
+          "Stock.COMMON.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Stock.Controllers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stock.BusinessRules/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Stock.COMMON/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,20 +1,30 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Stock.Entities.Entities
+namespace Stock.COMMON.Entities
 {
-    public class Product
+    public partial class Product
     {
-        public int Id { get; set; }
-        public int IdStock { get; set; }
+        public int IdProduct { get; set; }
+
+        public int? Category { get; set; }
+
         public string Nombre { get; set; }
-        public int Lote { get; set; }
-        public string Vencimiento { get; set; }
-        public decimal PrecioProducto { get; set; }
-        public int Codigo { get; set; }
-        public string EstadoProd { get; set; }
+
+        public string Lote { get; set; }
+
+        public DateTime? Vencimiento { get; set; }
+
+        public float? PrecioProducto { get; set; }
+
+        public int? Codigoproducto { get; set; }
+
+        public string EstadoProducto { get; set; }
+
+        public virtual Category CategoryNavigation { get; set; }
+
+        public virtual ICollection<Salesdetail> Salesdetails { get; set; } = new List<Salesdetail>();
+
+        public virtual ICollection<Provider> Providers { get; set; } = new List<Provider>();
     }
 }

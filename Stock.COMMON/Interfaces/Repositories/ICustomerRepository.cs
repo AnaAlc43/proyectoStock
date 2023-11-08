@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Stock.Entities.Entities;
+using Stock.COMMON.Entities;
+
 
 namespace Stock.COMMON.Interfaces.Repositories
 {

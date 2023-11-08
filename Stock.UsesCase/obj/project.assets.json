@@ -21,7 +21,7 @@
       "Stock.BusinessRules/1.0.0": {
         "type": "project",
         "dependencies": {
-          "Stock.Entities": "1.0.0"
+          "Stock.COMMON": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Stock.BusinessRules.dll": {}
@@ -30,13 +30,13 @@
           "bin/placeholder/Stock.BusinessRules.dll": {}
         }
       },
-      "Stock.Entities/1.0.0": {
+      "Stock.COMMON/1.0.0": {
         "type": "project",
         "compile": {
-          "bin/placeholder/Stock.Entities.dll": {}
+          "bin/placeholder/Stock.COMMON.dll": {}
         },
         "runtime": {
-          "bin/placeholder/Stock.Entities.dll": {}
+          "bin/placeholder/Stock.COMMON.dll": {}
         }
       }
     }
@@ -76,17 +76,17 @@
       "path": "../Stock.BusinessRules/Stock.BusinessRules.csproj",
       "msbuildProject": "../Stock.BusinessRules/Stock.BusinessRules.csproj"
     },
-    "Stock.Entities/1.0.0": {
+    "Stock.COMMON/1.0.0": {
       "type": "project",
-      "path": "../Stock.COMMON/Stock.Entities.csproj",
-      "msbuildProject": "../Stock.COMMON/Stock.Entities.csproj"
+      "path": "../Stock.COMMON/Stock.COMMON.csproj",
+      "msbuildProject": "../Stock.COMMON/Stock.COMMON.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
       "Microsoft.Extensions.DependencyInjection.Abstractions >= 7.0.0",
       "Stock.BusinessRules >= 1.0.0",
-      "Stock.Entities >= 1.0.0"
+      "Stock.COMMON >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -125,8 +125,8 @@
             "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj": {
               "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.BusinessRules\\Stock.BusinessRules.csproj"
             },
-            "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj": {
-              "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.Entities.csproj"
+            "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.COMMON.csproj": {
+              "projectPath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.COMMON\\Stock.COMMON.csproj"
             }
           }
         }

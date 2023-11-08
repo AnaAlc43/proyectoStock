@@ -1,11 +1,11 @@
-﻿using Stock.Entities.Entities;
-using Stock.Entities.Interfaces.Repositories;
+﻿using Stock.COMMON.Entities;
 using Stock.BusinessRules.DTOs.UserDTOs;
 using Stock.BusinessRules.DTOs.ValidationErrorDTO;
 using Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts;
 using Stock.BusinessRules.Interfaces.Presenters.User;
 using Stock.BusinessRules.Wrappers.User;
 using Stock.UsesCase.Specification.UserSpecifications;
+using Stock.COMMON.Interfaces.Repositories;
 
 namespace Stock.UseCases.Specification.UserSpecifications
 {
@@ -55,7 +55,7 @@ namespace Stock.UseCases.Specification.UserSpecifications
             {
                 await _repository.Create(newUser);
                 await _repository.SaveChange();
-                userResponse.IdUser = newUser.Id;
+                userResponse.IdUser = newUser.IdUser;
             }
             catch (Exception ex)
             {

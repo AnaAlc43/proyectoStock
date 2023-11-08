@@ -1,23 +1,33 @@
-﻿using System;
+﻿using Stock.COMMON.Interfaces;
+using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Stock.COMMON.Interfaces.Repositories;
+using Stock.COMMON.Common;
 
-namespace Stock.Entities.Entities
+namespace Stock.COMMON.Entities
 {
-    public class User
+    public partial class User : EntityCommon
     {
-        public int Id { get; set; }
+        public int IdUser { get; set; }
 
-        public int Rol { get; set; }
+        public int? Rol { get; set; }
 
         public string Nombre { get; set; }
 
         public string Apellido { get; set; }
 
+        public string Cuil { get; set; }
+
         public string Email { get; set; }
 
-        public string Cuil { get; set; }
+        public string Telefono { get; set; }
+
+        public string Descripcion { get; set; }
+
+        public virtual Roles RolNavigation { get; set; }
+
+        public virtual ICollection<Sales> Sales { get; set; } = new List<Sales>();
+
+
     }
 }

@@ -3,7 +3,7 @@ using Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts;
 using Stock.BusinessRules.Interfaces.Presenters.User;
 using Stock.BusinessRules.PersonalException;
 using Stock.BusinessRules.Wrappers.User;
-using Stock.Entities.Interfaces.Repositories;
+using Stock.COMMON.Interfaces.Repositories;
 
 namespace Stock.UseCases.UseCases.UserUseCase
 {

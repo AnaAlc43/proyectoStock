@@ -35,7 +35,7 @@ namespace Stock.UsesCase.Specification.UserSpecifications
             {
                 _errors.Add(new ValidationErrorDTOs
                 {
-                    PropertyName = "Nomre Actor",
+                    PropertyName = "Nombre Usuario",
                     ErrorMessage = "El campo no puede ser nulo ni vacío."
 
                 });
@@ -44,7 +44,7 @@ namespace Stock.UsesCase.Specification.UserSpecifications
             {
                 _errors.Add(new ValidationErrorDTOs
                 {
-                    PropertyName = "Nomre Actor",
+                    PropertyName = "Nombre Usuario",
                     ErrorMessage = "El campo no puede contener más de 45 caracteres."
 
                 });

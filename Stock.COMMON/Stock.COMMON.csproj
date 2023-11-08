@@ -41,13 +41,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Common\EntityCommon.cs" />
+    <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Entities\Provider.cs" />
+    <Compile Include="Entities\Roles.cs" />
     <Compile Include="Entities\Sales.cs" />
-    <Compile Include="Entities\SalesDetail.cs" />
+    <Compile Include="Entities\Salesdetail.cs" />
     <Compile Include="Entities\User.cs" />
-    <Compile Include="Entities\UserRoles.cs" />
     <Compile Include="Interfaces\IUnitOfWork.cs" />
     <Compile Include="Interfaces\Repositories\ICustomerRepository.cs" />
     <Compile Include="Interfaces\Repositories\IProductRepository.cs" />

@@ -4,21 +4,19 @@ using System.Linq;
 using System.Runtime.Remoting.Contexts;
 using System.Text;
 using System.Threading.Tasks;
-using Stock.Entities.Entities;
+using Stock.COMMON.Entities;
 
-namespace Stock.Entities.Interfaces.Repositories
+
+namespace Stock.COMMON.Interfaces.Repositories
 {
     public interface IUserRepository : IUnitOfWork
     {
 
         Task<User> GetById(int id);
-        
         Task Create(User user);
-        Task CreateRol(UserRoles nombre);
+        Task CreateRol(Roles nombre);
         Task Update(User user);
-        
-        Task Delete(int id);
-        Task IsDelete(int id);
-        
+        Task Delete(int userid);
+
     }
 }

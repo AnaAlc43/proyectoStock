@@ -9,7 +9,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Stock.Controllers\Stock.Controllers.csproj" />
     <ProjectReference Include="..\Stock.Presenters\Stock.Presenters.csproj" />
-    <ProjectReference Include="..\Stock.Repositories\Stock.Repositories.csproj" />
     <ProjectReference Include="..\Stock.UsesCase\Stock.UsesCase.csproj" />
   </ItemGroup>
 

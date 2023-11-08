@@ -1,5 +1,4 @@
-﻿using Stock.Entities.Entities;
-using Stock.Entities.Interfaces.Repositories;
+﻿using Stock.COMMON.Entities;
 using Stock.UseCases.Specification.UserSpecifications;
 using Stock.BusinessRules.DTOs.UserDTOs;
 using Stock.BusinessRules.DTOs.ValidationErrorDTO;
@@ -7,8 +6,9 @@ using Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts;
 using Stock.BusinessRules.Interfaces.Presenters.User;
 using Stock.BusinessRules.Wrappers.User;
 using Stock.UsesCase.Specification.UserSpecifications;
+using Stock.COMMON.Interfaces.Repositories;
 
-namespace VideoClub.UseCases.UseCases.UserUseCase
+namespace Stock.UseCases.UseCases.UserUseCase
 {
     public class UpdateUserInteractor : IUpdateUserInputPort
     {
@@ -38,8 +38,9 @@ namespace VideoClub.UseCases.UseCases.UserUseCase
                     userResponse.ValidationErrors = errors;
                     await _presenter.Handle(userResponse);
                     return;
-                }
-
+                }           
+        
+                /*
                 // Obtener el UserResponse existente por su ID
                 // Obtener el UserResponse existente por su ID
                 User existingUser = await _repository.GetById(updateUserRequest.Id);
@@ -48,7 +49,7 @@ namespace VideoClub.UseCases.UseCases.UserUseCase
                     // Manejar el caso en el que el UserResponse no existe
                     // Devuelve un mensaje indicando que el UserResponse no se encontró.
                     userResponse.ErrorNumber = 404;
-                    userResponse.Message = $"El acton con {updateUserRequest.Id} no existe";
+                    userResponse.Message = $"El Usuario con {updateUserRequest.Id} no existe";
                     await _presenter.Handle(userResponse);
                     return;
                 }
@@ -63,7 +64,7 @@ namespace VideoClub.UseCases.UseCases.UserUseCase
                     await _presenter.Handle(userResponse);
                     return;
                 }
-
+                
                 // Actualizar la información del User con los datos proporcionados
                 existingUser.Nombre = updateUserRequest.Nombre;
 
@@ -76,8 +77,9 @@ namespace VideoClub.UseCases.UseCases.UserUseCase
                 userResponse.NombreUsuario = existingUser.Nombre;
 
                 // Enviar la respuesta al presentador
-                await _presenter.Handle(userResponse);
+                await _presenter.Handle(userResponse);*/
             }
+
             catch (Exception ex)
             {
                 // Manejar cualquier error que pueda ocurrir durante la actualización
@@ -88,10 +90,10 @@ namespace VideoClub.UseCases.UseCases.UserUseCase
                 await _presenter.Handle(userResponse);
             }
         }
-
-        private List<ValidationErrorDTOs> ValidateUser(UpdateUserRequest updateActorRequest)
+        
+        private List<ValidationErrorDTOs> ValidateUser(UpdateUserRequest updateUserRequest)
         {
-            var specification = new UpdateUserSpecifications(updateActorRequest);
+            var specification = new UpdateUserSpecifications(updateUserRequest);
             return specification.IsValid();
         }
     }

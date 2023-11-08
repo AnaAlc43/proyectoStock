@@ -77,9 +77,9 @@
     <Compile Include="Interfaces\Getways\UserGetways\OutputPort\ICreateUserOutputPort.cs" />
     <Compile Include="Interfaces\Getways\UserGetways\OutputPort\IDeleteUserOutputPort.cs" />
     <Compile Include="Interfaces\Getways\UserGetways\OutputPort\IUpdateUserOutputPort.cs" />
-    <Compile Include="Interfaces\Presenters\Provider\ICreateUserPresenter.cs" />
-    <Compile Include="Interfaces\Presenters\Provider\IDeleteUserPresenter.cs" />
-    <Compile Include="Interfaces\Presenters\Provider\IUpdateUserPresenter.cs" />
+    <Compile Include="Interfaces\Presenters\Provider\ICreateProviderPresenter.cs" />
+    <Compile Include="Interfaces\Presenters\Provider\IDeleteProviderPresenter.cs" />
+    <Compile Include="Interfaces\Presenters\Provider\IUpdateProviderPresenter.cs" />
     <Compile Include="Interfaces\Presenters\User\ICreateUserPresenter.cs" />
     <Compile Include="Interfaces\Presenters\User\IDeleteUserPresenter.cs" />
     <Compile Include="Interfaces\Presenters\User\IUpdateUserPresenter.cs" />
@@ -95,9 +95,9 @@
     <Compile Include="Wrappers\WBase.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Stock.COMMON\Stock.Entities.csproj">
+    <ProjectReference Include="..\Stock.COMMON\Stock.COMMON.csproj">
       <Project>{11a05a52-f8a3-45ff-a4da-98794fb3e7bf}</Project>
-      <Name>Stock.Entities</Name>
+      <Name>Stock.COMMON</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -1,26 +1,24 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Stock.Entities.Entities
+namespace Stock.COMMON.Entities
 {
-    public class Customer
+    public partial class Customer
     {
-        public int Id { get; set; }
+        public int IdCustomer { get; set; }
 
         public string Nombre { get; set; }
 
         public string Apellido { get; set; }
 
-        public int Telefono { get; set; }
+        public int? Telefono { get; set; }
 
-        public int DNI_CUIL { get; set; }
+        public int? Dni { get; set; }
 
         public string Email { get; set; }
 
-        public string Direccion { get; set; }
+        public string Direrccion { get; set; }
 
+        public virtual ICollection<Sales> Sales { get; set; } = new List<Sales>();
     }
 }
