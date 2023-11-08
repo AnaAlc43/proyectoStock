@@ -3,6 +3,7 @@ using Stock.Repositories.Context;
 using System.Configuration;
 using Stock.Presenters;
 using Stock.UsesCases;
+using Stock.Repositories;
 
 
 var builder = WebApplication.CreateBuilder(args);
@@ -15,8 +16,9 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddServicesPresenter();
 builder.Services.AddServicesUseCases();
+builder.Services.AddServicesRepositories();
 builder.Services.AddDbContext<Controlstock1Context>(options =>
-            options.UseMySQL(""));
+            options.UseMySQL());
 
 var app = builder.Build();
 
