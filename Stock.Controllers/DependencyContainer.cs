@@ -1,4 +1,5 @@
-﻿/*using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.Extensions.DependencyInjection;
+using Stock.BusinessRules.Interfaces.Controllers.UserControllers;
 using Stock.Controllers.UserControllers;
 
 namespace Stock.Controllers
@@ -7,19 +8,18 @@ namespace Stock.Controllers
     {
         public static IServiceCollection AddServicesControllers(this IServiceCollection services)
         {
-            services.AddScoped<ICreateActorController, CreateActorController>();
+            services.AddScoped<ICreateUserController, CreateuserController>();
 
-            services.AddScoped<IDeleteActorController, DeleteActorController>();
+            services.AddScoped<IDeleteuserController, DeleteUserController>();
 
-            services.AddScoped<IUpdateActorController, UpdateActorController>();
+            services.AddScoped<IUpdateUserController, UpdateUserController>();
 
-            services.AddScoped<IGetActorByIdController, GetActorByIdController>();
+            //services.AddScoped<IGetActorByIdController, GetActorByIdController>();
 
-            services.AddScoped<IGetAllActorController, GetAllActorController>();
+            //services.AddScoped<IGetAllActorController, GetAllActorController>();
 
             return services;
 
         }
     }
 }
-*/

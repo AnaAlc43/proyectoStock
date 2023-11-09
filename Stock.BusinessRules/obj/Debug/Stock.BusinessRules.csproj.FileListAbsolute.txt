@@ -1,9 +1,0 @@
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.BusinessRules.dll
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.BusinessRules.pdb
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.COMMON.dll
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.COMMON.pdb
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\obj\Debug\Stock.BusinessRules.csproj.AssemblyReference.cache
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\obj\Debug\Stock.BusinessRules.csproj.CoreCompileInputs.cache
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\obj\Debug\Stock.BusinessRules.csproj.CopyComplete
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\obj\Debug\Stock.BusinessRules.dll
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\obj\Debug\Stock.BusinessRules.pdb

@@ -1,6 +1,0 @@
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\Stock.COMMON.dll
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\Stock.COMMON.pdb
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\obj\Debug\Stock.COMMON.csproj.AssemblyReference.cache
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\obj\Debug\Stock.COMMON.csproj.CoreCompileInputs.cache
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\obj\Debug\Stock.COMMON.dll
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\obj\Debug\Stock.COMMON.pdb

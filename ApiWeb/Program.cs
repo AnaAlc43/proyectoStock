@@ -16,7 +16,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddServicesPresenter();
 builder.Services.AddServicesUseCases();
-builder.Services.AddServicesRepositories();
+builder.Services.AddServicesRepositories(builder.Configuration, "MySqlcontrolstock1");
 builder.Services.AddDbContext<Controlstock1Context>(options =>
             options.UseMySQL());
 

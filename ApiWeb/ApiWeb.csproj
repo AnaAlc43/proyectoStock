@@ -14,7 +14,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Stock.DependencyInversion\Stock.DependencyInversion.csproj" />
     <ProjectReference Include="..\Stock.Repositories\Stock.Repositories.csproj" />
   </ItemGroup>
 
