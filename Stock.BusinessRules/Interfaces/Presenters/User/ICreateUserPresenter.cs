@@ -8,16 +8,16 @@ using Stock.BusinessRules.Wrappers.User;
 
 namespace Stock.BusinessRules.Interfaces.Presenters.User
 {
-    /// <summary>
-    /// Este presenter se encarga de manejar la presentación después de insertar 
-    /// un nuevo registro de un User en el contexto.
-    /// </summary>
+
+    // Este presenter se encarga de manejar la presentación después de insertar 
+    // un nuevo registro de un User en el contexto.
+    // Expone una propiedad User que contiene detalles sobre la operación
+    // de inserción.
+    
     public interface ICreateUserPresenter : ICreateUserOutputPort
     {
-        /// <summary>
-        /// Expone una propiedad User que contiene detalles sobre la operación
-        /// de inserción.
-        /// </summary>
+        
+
         WCreateDeleteUser User { get; }
     }
 }

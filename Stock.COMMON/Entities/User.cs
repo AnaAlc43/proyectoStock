@@ -1,7 +1,4 @@
-﻿using Stock.COMMON.Interfaces;
-using System;
-using System.Collections.Generic;
-using Stock.COMMON.Interfaces.Repositories;
+﻿using System.Collections.Generic;
 using Stock.COMMON.Common;
 
 namespace Stock.COMMON.Entities
@@ -10,7 +7,7 @@ namespace Stock.COMMON.Entities
     {
         public int IdUser { get; set; }
 
-        public int? Rol { get; set; }
+        public int Rol { get; set; }
 
         public string Nombre { get; set; }
 

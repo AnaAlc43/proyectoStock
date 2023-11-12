@@ -1,27 +1,14 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Stock.BusinessRules.DTOs.ValidationErrorDTO;
 
-namespace VideoClub.BusinessRules.Interfaces.ValidationSpecification
+namespace Stock.BusinessRules.Interfaces.ValidationSpecification
 {
-    /// <summary>
-    /// Iinterfaz que se utiliza para representar especificaciones de validación
-    /// en el sistema.
-    /// </summary>
-    /// <typeparam name="T">
-    /// Objeto al que se aplica la especificación de validación.
-    /// </typeparam>
+    //Cuando "T" sea una clase
+    //Valida el objeto según la especificación y devuelve una lista de errores de validación.
+    //Una lista de errores de validación. Si la validación es exitosa, la lista estará vacía
+
     public interface ISpecification<T> where T : class
     {
-        /// <summary>
-        /// Valida el objeto según la especificación y devuelve una lista de 
-        /// errores de validación.
-        /// </summary>
-        /// <returns>Una lista de errores de validación. Si la validación es exitosa, 
-        /// la lista estará vacía.</returns>
         List<ValidationErrorDTOs> IsValid();
     }
 }

@@ -9,30 +9,17 @@ using Stock.COMMON.Interfaces.Repositories;
 
 namespace Stock.UseCases.Specification.UserSpecifications
 {
-    /// <summary>
-    /// Clase que implementa el Input Port para crear un UserResponse.
-    /// </summary>
     public class CreateUserIteractor : ICreateUserInputPort
     {
         readonly IUserRepository _repository;
         readonly ICreateUserPresenter _presenter;
 
-        /// <summary>
-        /// Constructor de la clase CreateUserIteractor.
-        /// </summary>
-        /// <param name="repository">El repositorio de Usuarios.</param>
-        /// <param name="presenter">El presentador para la creación de Usuarios.</param>
         public CreateUserIteractor(IUserRepository repository, ICreateUserPresenter presenter)
         {
             _repository = repository;
             _presenter = presenter;
         }
 
-        /// <summary>
-        /// Maneja la creación de un nuevo UserResponse.
-        /// </summary>
-        /// <param name="createUserRequest">Los datos para crear el UserResponse.</param>
-        /// <returns>El ID del nuevo UserResponse creado o 0 si hubo errores.</returns>
         public async Task Handle(CreateUserRequest creatUserRequest)
         {
             List<ValidationErrorDTOs> errors = new List<ValidationErrorDTOs>();

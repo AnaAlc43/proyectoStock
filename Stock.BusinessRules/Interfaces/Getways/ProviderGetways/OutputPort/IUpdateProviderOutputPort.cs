@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Stock.BusinessRules.Wrappers.Provider;
 
 namespace Stock.BusinessRules.Interfaces.Getways.ProviderGetways.OutputPort
@@ -13,11 +9,6 @@ namespace Stock.BusinessRules.Interfaces.Getways.ProviderGetways.OutputPort
 
     public interface IUpdateProviderOutputPort
     {
-        /// <summary>
-        /// Manejala respuesta que se le envia al Presenter con los detalles de la operación
-        /// de actualización de una Provider en el contexto.
-        /// </summary>
-        /// <param name="provider">Recibe un objeto WrapperCreateDeleteProvider que contiene detalles sobre la operación.</param>
         Task Handle(WUpdateProvider provider);
     }
 

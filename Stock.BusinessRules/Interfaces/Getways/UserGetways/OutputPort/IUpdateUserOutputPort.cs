@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Stock.BusinessRules.Wrappers.User;
 
 namespace Stock.BusinessRules.Interfaces.Getways.UserGetways.OutputPort
@@ -13,11 +9,6 @@ namespace Stock.BusinessRules.Interfaces.Getways.UserGetways.OutputPort
 
     public interface IUpdateUserOutputPort
     {
-        /// <summary>
-        /// Manejala respuesta que se le envia al Presenter con los detalles de la operación
-        /// de actualización de una user en el contexto.
-        /// </summary>
-        /// <param name="user">Recibe un objeto WrapperCreateDeleteUser que contiene detalles sobre la operación.</param>
         Task Handle(WUpdateUser user);
     }
 

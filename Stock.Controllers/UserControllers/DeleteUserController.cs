@@ -4,7 +4,7 @@ using Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts;
 using Stock.BusinessRules.Interfaces.Presenters.User;
 using Stock.BusinessRules.Wrappers.User;
 
-namespace VideoClub.Controllers.ActorControllers
+namespace Stock.Controllers.UserControllers
 {
     public class DeleteUserController : IDeleteUserController
     {

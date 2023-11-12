@@ -8,9 +8,9 @@ namespace Stock.Controllers
     {
         public static IServiceCollection AddServicesControllers(this IServiceCollection services)
         {
-            services.AddScoped<ICreateUserController, CreateuserController>();
+            services.AddScoped<ICreateUserController, CreateUserController>();
 
-            services.AddScoped<IDeleteuserController, DeleteUserController>();
+            services.AddScoped<IDeleteUserController, DeleteUserController>();
 
             services.AddScoped<IUpdateUserController, UpdateUserController>();
 

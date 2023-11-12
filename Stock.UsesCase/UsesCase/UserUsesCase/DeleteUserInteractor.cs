@@ -1,5 +1,4 @@
-﻿using Stock.BusinessRules.DTOs.UserDTOs;
-using Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts;
+﻿using Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts;
 using Stock.BusinessRules.Interfaces.Presenters.User;
 using Stock.BusinessRules.PersonalException;
 using Stock.BusinessRules.Wrappers.User;

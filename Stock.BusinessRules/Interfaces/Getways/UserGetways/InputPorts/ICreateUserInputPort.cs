@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Stock.BusinessRules.DTOs.UserDTOs;
 
 namespace Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts
@@ -12,11 +8,6 @@ namespace Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts
 
     public interface ICreateUserInputPort
     {
-        /// <summary>
-        /// El método Handle recibiría un objeto CreateUserRequest con el que se creara un
-        /// nuevo registro en el contexto.
-        /// </summary>
-        /// <param name="creatUserRequest">Contiene los detalles del nuevo User a crear.</param>
         Task Handle(CreateUserRequest creatUserRequest);
     }
 }

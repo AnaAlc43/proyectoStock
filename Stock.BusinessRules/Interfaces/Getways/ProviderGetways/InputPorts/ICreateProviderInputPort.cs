@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using Stock.BusinessRules.DTOs.ProviderDTOs;
 
 namespace Stock.BusinessRules.Interfaces.Getways.ProviderGetways.InputPorts
@@ -12,11 +8,6 @@ namespace Stock.BusinessRules.Interfaces.Getways.ProviderGetways.InputPorts
 
     public interface ICreateProviderInputPort
     {
-        /// <summary>
-        /// El método Handle recibiría un objeto CreateProviderRequest con el que se creara un
-        /// nuevo registro en el contexto.
-        /// </summary>
-        /// <param name="creatProviderRequest">Contiene los detalles del nuevo Provider a crear.</param>
         Task Handle(CreateProviderRequest creatProviderRequest);
     }
 }

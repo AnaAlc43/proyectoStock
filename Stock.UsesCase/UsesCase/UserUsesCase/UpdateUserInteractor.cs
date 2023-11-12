@@ -1,6 +1,4 @@
-﻿using Stock.COMMON.Entities;
-using Stock.UseCases.Specification.UserSpecifications;
-using Stock.BusinessRules.DTOs.UserDTOs;
+﻿using Stock.BusinessRules.DTOs.UserDTOs;
 using Stock.BusinessRules.DTOs.ValidationErrorDTO;
 using Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts;
 using Stock.BusinessRules.Interfaces.Presenters.User;

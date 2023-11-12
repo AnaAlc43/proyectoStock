@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\ApiWeb"
   ],
-  "SelectedNode": "\\proyectoStock.sln",
+  "SelectedNode": "\\ApiWeb\\ApiWeb.csproj",
   "PreviewInSolutionExplorer": false
 }

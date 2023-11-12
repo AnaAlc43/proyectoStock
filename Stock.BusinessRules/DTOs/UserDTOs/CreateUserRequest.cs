@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace Stock.BusinessRules.DTOs.UserDTOs
 
-    /// <summary>
-    ///  DTO que se utiliza para transferir datos de entrada cuando se está creando un nuevo
-    ///  actor en la capa de controlador o presentación y se necesita enviar esos datos a la
-    ///  capa de negocio.
-    /// </summary>
+
+    //  DTO que se utiliza para transferir datos de entrada cuando se está creando un nuevo
+    //  actor en la capa de controlador o presentación y se necesita enviar esos datos a la
+    //  capa de negocio.
+
 
 {
     /*Un constructor predeterminado, que es un método especial llamado "CreateUserResquest" que se ejecuta

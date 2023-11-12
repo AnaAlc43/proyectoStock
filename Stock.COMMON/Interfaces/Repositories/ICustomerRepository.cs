@@ -14,6 +14,7 @@ namespace Stock.COMMON.Interfaces.Repositories
         //en el contexto de un repositorio de clientes (ICustomerRepository).
         //Este repositorio proporciona una interfaz común para que las clases que lo implementan
         //realicen operaciones de base de datos, como crear, eliminar y obtener clientes.
+
         Task Create(Customer cliente);
         Task Delete(int clienteId);
         Task<List<Customer>> GetAllClientesAsync(int Customer);

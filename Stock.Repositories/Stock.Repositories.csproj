@@ -20,8 +20,4 @@
     <ProjectReference Include="..\Stock.COMMON\Stock.COMMON.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="EFCore\Configurations\" />
-  </ItemGroup>
-
 </Project>

@@ -1,18 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Stock.BusinessRules.DTOs.UserDTOs;
+﻿using Stock.BusinessRules.DTOs.UserDTOs;
 using Stock.BusinessRules.DTOs.ValidationErrorDTO;
-using VideoClub.BusinessRules.Interfaces.ValidationSpecification;
+using Stock.BusinessRules.Interfaces.ValidationSpecification;
 
 namespace Stock.UsesCase.Specification.UserSpecifications
 {
     public class CreateUserSpecifications : ISpecification<CreateUserRequest>
     {
         readonly CreateUserRequest _entity;
-        readonly List<ValidationErrorDTOs> _errors = new List<ValidationErrorDTOs>();
+        readonly List<ValidationErrorDTOs> _errors = new();
         public CreateUserSpecifications(CreateUserRequest entity)
         {
             _entity = entity;
