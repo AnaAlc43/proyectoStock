@@ -33,6 +33,12 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=4.0.4.1, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.4.5.3\lib\net461\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.2.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.5.4\lib\net461\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -64,6 +70,8 @@
     <Compile Include="Interfaces\Controllers\ProviderControllers\IUpdateProviderController.cs" />
     <Compile Include="Interfaces\Controllers\UserControllers\ICreateUserController.cs" />
     <Compile Include="Interfaces\Controllers\UserControllers\IDeleteUserController.cs" />
+    <Compile Include="Interfaces\Controllers\UserControllers\IGetAllUserController.cs" />
+    <Compile Include="Interfaces\Controllers\UserControllers\IGetUserByIdController.cs" />
     <Compile Include="Interfaces\Controllers\UserControllers\IUpdateUserController.cs" />
     <Compile Include="Interfaces\Getways\ProviderGetways\InputPorts\ICreateProviderInputPort.cs" />
     <Compile Include="Interfaces\Getways\ProviderGetways\InputPorts\IDeleteProviderInputPort.cs" />
@@ -73,15 +81,21 @@
     <Compile Include="Interfaces\Getways\ProviderGetways\OutputPort\IUpdateProviderOutputPort.cs" />
     <Compile Include="Interfaces\Getways\UserGetways\InputPorts\ICreateUserInputPort.cs" />
     <Compile Include="Interfaces\Getways\UserGetways\InputPorts\IDeleteUserInputPort.cs" />
+    <Compile Include="Interfaces\Getways\UserGetways\InputPorts\IGetAllUsersInputPort.cs" />
+    <Compile Include="Interfaces\Getways\UserGetways\InputPorts\IGetUserByIdInputPort.cs" />
     <Compile Include="Interfaces\Getways\UserGetways\InputPorts\IUpdateUserInputPort.cs" />
     <Compile Include="Interfaces\Getways\UserGetways\OutputPort\ICreateUserOutputPort.cs" />
     <Compile Include="Interfaces\Getways\UserGetways\OutputPort\IDeleteUserOutputPort.cs" />
+    <Compile Include="Interfaces\Getways\UserGetways\OutputPort\IGetAllUsersOutputPort.cs" />
+    <Compile Include="Interfaces\Getways\UserGetways\OutputPort\IGetUserByIdOutputPort.cs" />
     <Compile Include="Interfaces\Getways\UserGetways\OutputPort\IUpdateUserOutputPort.cs" />
     <Compile Include="Interfaces\Presenters\Provider\ICreateProviderPresenter.cs" />
     <Compile Include="Interfaces\Presenters\Provider\IDeleteProviderPresenter.cs" />
     <Compile Include="Interfaces\Presenters\Provider\IUpdateProviderPresenter.cs" />
     <Compile Include="Interfaces\Presenters\User\ICreateUserPresenter.cs" />
     <Compile Include="Interfaces\Presenters\User\IDeleteUserPresenter.cs" />
+    <Compile Include="Interfaces\Presenters\User\IGetAllUsersPresenter.cs" />
+    <Compile Include="Interfaces\Presenters\User\IGetUserByIdPresenter.cs" />
     <Compile Include="Interfaces\Presenters\User\IUpdateUserPresenter.cs" />
     <Compile Include="Interfaces\ValidationSpecification\ISpecification.cs" />
     <Compile Include="PersonalException\PersonalException.cs" />
@@ -91,6 +105,8 @@
     <Compile Include="Wrappers\Provider\WUpdateProvider.cs" />
     <Compile Include="Wrappers\User\WCreateDeleteUser.cs" />
     <Compile Include="Wrappers\User\WDeleteUser.cs" />
+    <Compile Include="Wrappers\User\WSelectAllUsers.cs" />
+    <Compile Include="Wrappers\User\WSelectUser.cs" />
     <Compile Include="Wrappers\User\WUpdateUser.cs" />
     <Compile Include="Wrappers\WBase.cs" />
   </ItemGroup>
@@ -102,6 +118,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Interfaces\Controllers\UserControllers\NotasControllers.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
