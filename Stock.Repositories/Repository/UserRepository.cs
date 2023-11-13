@@ -3,7 +3,6 @@ using MySql.Data.MySqlClient;
 using Stock.BusinessRules.PersonalException;
 using Stock.Repositories.Context;
 using Stock.COMMON.Entities;
-using Stock.COMMON;
 using Stock.COMMON.Interfaces.Repositories;
 
 namespace Stock.Repository.Repositories

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Reflection;
 using Microsoft.EntityFrameworkCore;
 using Stock.COMMON.Entities;
 
@@ -33,5 +34,13 @@ public partial class Controlstock1Context : DbContext
     public virtual DbSet<User> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){}
+
+    // Este método se llama al configurar el modelo de base de datos.
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        // Aplica configuraciones de entidades desde el ensamblado actual.
+        modelBuilder.ApplyConfigurationsFromAssembly(
+            Assembly.GetExecutingAssembly());
+    }
 
 }

@@ -1,4 +1,6 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿#nullable disable
+
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Stock.COMMON.Interfaces.Repositories;
