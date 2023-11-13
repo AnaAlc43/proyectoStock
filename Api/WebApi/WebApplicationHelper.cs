@@ -1,9 +1,9 @@
 ﻿using Stock.DependencyInversion;
-//using Stock.WebApi.EndPoint.User;
 
-namespace Stock.WebApi
+
+namespace WebApi
 {
-    public static class WebApplicationHelper
+    public class WebApplicationHelper
     {
         public static WebApplication CreateWebApplication(this WebApplicationBuilder builder)
         {
@@ -17,7 +17,7 @@ namespace Stock.WebApi
 
             // Registrar los servicios de la aplicación
             builder.Services.AddControlStockServices(
-                builder.Configuration, "MySqlControlstock1DB");
+                builder.Configuration, "MySqlcontrolstock1DB");
 
             // Agregar el servicio CORS para clientes que se ejecutan
             // en el navegador Web (como Blazor WebAssembly).
@@ -41,30 +41,22 @@ namespace Stock.WebApi
                 return default;
             }
 
-
-        }
-        public static WebApplication ConfigureWebApplication(
-            this WebApplication app)
-        {
-            // Habilitar el middleware para servir el documento
-            // JSON generado y la interfaz UI de Swagger en el
-            // ambiente de desarrollo.
-            if (app.Environment.IsDevelopment())
+            public static WebApplication ConfigureWebApplication(
+                this WebApplication app)
             {
-                app.UseSwagger();
-                app.UseSwaggerUI();
+                // Habilitar el middleware para servir el documento
+                // JSON generado y la interfaz UI de Swagger en el
+                // ambiente de desarrollo.
+                if (app.Environment.IsDevelopment())
+                {
+                    app.UseSwagger();
+                    app.UseSwaggerUI();
+                }
+
+
+                app.UseCors();
+
+                return app;
             }
-
-            // Registrar los endpoints de la aplicación
-            //app.GetAllActorEndPoint();
-            //app.GetActorEndPoint();
-            app.CreateUserEndPoint();
-            app.DeleteUserEndPoint();
-
-            // Agregar el Middleware CORS
-            app.UseCors();
-
-            return app;
         }
-    }
-}   
+}

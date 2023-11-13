@@ -1,6 +1,4 @@
-using Stock.WebApi;
-
-/*var builder = WebApplication.CreateBuilder(args);
+var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
@@ -18,16 +16,8 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.UseHttpsRedirection();
-
 app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();*/
-
-
-var builder = WebApplication.CreateBuilder(args)
-    .CreateWebApplication()
-    .ConfigureWebApplication();
-builder.Run();
+app.Run();
