@@ -3,7 +3,7 @@ using Stock.COMMON.Common;
 
 namespace Stock.COMMON.Entities
 {
-    public partial class User : EntityCommon
+    public partial class Users : EntityCommon
     {
         public int IdUser { get; set; }
 

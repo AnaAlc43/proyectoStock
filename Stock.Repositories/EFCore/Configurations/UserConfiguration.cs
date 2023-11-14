@@ -11,9 +11,9 @@ using System.Threading.Tasks;
 
 namespace Stock.Repositories.EFCore.Configurations
 {
-    public class UserConfiguration : IEntityTypeConfiguration<User>
+    public class UserConfiguration : IEntityTypeConfiguration<Users>
     {
-        public void Configure(EntityTypeBuilder<User> builder)
+        public void Configure(EntityTypeBuilder<Users> builder)
         {
             builder.ToTable("Usuarios");
 

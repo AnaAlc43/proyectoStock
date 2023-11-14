@@ -32,7 +32,7 @@ namespace Stock.UseCases.Specification.UserSpecifications
                 return;
             }
 
-            User newUser = new()
+            Users newUser = new()
             {
                 Nombre = creatUserRequest.Nombre
             };

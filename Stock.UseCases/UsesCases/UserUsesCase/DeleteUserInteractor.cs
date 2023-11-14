@@ -4,7 +4,7 @@ using Stock.BusinessRules.PersonalException;
 using Stock.BusinessRules.Wrappers.User;
 using Stock.COMMON.Interfaces.Repositories;
 
-namespace Stock.UseCases.UseCases.UserUseCase
+namespace Stock.UseCases.UsesCases.UserUseCase
 {
     public class DeleteUserInteractor : IDeleteUserInputPort
     {

@@ -21,6 +21,6 @@ namespace Stock.COMMON.Entities
 
         public virtual ICollection<Salesdetail> Salesdetails { get; set; } = new List<Salesdetail>();
 
-        public virtual User UserNavigation { get; set; }
+        public virtual Users UserNavigation { get; set; }
     }
 }

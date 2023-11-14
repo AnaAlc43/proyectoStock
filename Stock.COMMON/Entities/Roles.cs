@@ -11,6 +11,6 @@ namespace Stock.COMMON.Entities
 
         public string Descripcion { get; set; }
 
-        public virtual ICollection<User> Users { get; set; } = new List<User>();
+        public virtual ICollection<Users> Users { get; set; } = new List<Users>();
     }
 }

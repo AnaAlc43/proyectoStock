@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts;
 using Stock.UseCases.Specification.UserSpecifications;
-using Stock.UseCases.UseCases.UserUseCase;
+using Stock.UseCases.UsesCases.UserUseCase;
 
 namespace Stock.UseCases
 {
@@ -15,9 +15,9 @@ namespace Stock.UseCases
 
             services.AddScoped<IUpdateUserInputPort, UpdateUserInteractor>();
 
-            //services.AddScoped<IGetUserByIdInputPort, GetUserByIdInteractor>();
+            services.AddScoped<IGetUserByIdInputPort, GetUserByIdInteractor>();
 
-            //services.AddScoped<IGetAllUserInputPort, GetAllUserIterator>();
+            services.AddScoped<IGetAllUserInputPort, GetAllUserIterator>();
 
             return services;
 

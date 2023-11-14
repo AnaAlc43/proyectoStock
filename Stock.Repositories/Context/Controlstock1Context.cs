@@ -31,7 +31,7 @@ public partial class Controlstock1Context : DbContext
 
     public virtual DbSet<Salesdetail> Salesdetails { get; set; }
 
-    public virtual DbSet<User> Users { get; set; }
+    public virtual DbSet<Users> Users { get; set; }
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder){}
 

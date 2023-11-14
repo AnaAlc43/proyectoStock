@@ -6,7 +6,7 @@ using Stock.BusinessRules.Wrappers.User;
 using Stock.UseCases.Specification.UserSpecifications;
 using Stock.COMMON.Interfaces.Repositories;
 
-namespace Stock.UseCases.UseCases.UserUseCase
+namespace Stock.UseCases.UsesCases.UserUseCase
 {
     public class UpdateUserInteractor : IUpdateUserInputPort
     {

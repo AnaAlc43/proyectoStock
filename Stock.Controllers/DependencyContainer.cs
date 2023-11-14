@@ -14,9 +14,9 @@ namespace Stock.Controllers
 
             services.AddScoped<IUpdateUserController, UpdateUserController>();
 
-            //services.AddScoped<IGetActorByIdController, GetActorByIdController>();
+            services.AddScoped<IGetUserByIdController, GetUserByIdController>();
 
-            //services.AddScoped<IGetAllActorController, GetAllActorController>();
+            services.AddScoped<IGetAllUserController, GetAllUserController>();
 
             return services;
 

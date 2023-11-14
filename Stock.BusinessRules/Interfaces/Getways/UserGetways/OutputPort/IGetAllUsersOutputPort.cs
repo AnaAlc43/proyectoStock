@@ -12,7 +12,7 @@ namespace Stock.BusinessRules.Interfaces.Getways.UserGetways.OutputPort
     /// Manejala respuesta que se le envia al Presenter con los detalles de la operación
     /// de seleccion de todos los Users en el contexto. 
 
-        ValueTask Handle(WSelectAllUser Users);
+        ValueTask Handle(WSelectAllUsers Users);
     }
 
 }

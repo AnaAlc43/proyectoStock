@@ -16,7 +16,7 @@ namespace Stock.Repository.Repositories
             _context = context;
         }
 
-        public async Task Create(User user)
+        public async Task Create(Users user)
         {
             try
             {
@@ -90,11 +90,11 @@ namespace Stock.Repository.Repositories
             await _context.SaveChangesAsync();
         }
 
-        public Task Update(User user)
+        public Task Update(Users user)
         {
             throw new NotImplementedException();
         }
-        public Task<User> GetById(int id)
+        public Task<Users> GetById(int id)
         {
             throw new NotImplementedException();
         }
