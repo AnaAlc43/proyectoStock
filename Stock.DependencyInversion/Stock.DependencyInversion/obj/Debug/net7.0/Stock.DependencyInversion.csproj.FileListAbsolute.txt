@@ -12,6 +12,7 @@ C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInve
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInversion\Stock.DependencyInversion\bin\Debug\net7.0\Stock.Repositories.pdb
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInversion\Stock.DependencyInversion\bin\Debug\net7.0\Stock.UseCases.pdb
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInversion\Stock.DependencyInversion\bin\Debug\net7.0\Stock.BusinessRules.pdb
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInversion\Stock.DependencyInversion\bin\Debug\net7.0\Stock.BusinessRules.dll.config
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInversion\Stock.DependencyInversion\bin\Debug\net7.0\Stock.COMMON.pdb
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInversion\Stock.DependencyInversion\obj\Debug\net7.0\Stock.DependencyInversion.csproj.AssemblyReference.cache
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.DependencyInversion\Stock.DependencyInversion\obj\Debug\net7.0\Stock.DependencyInversion.GeneratedMSBuildEditorConfig.editorconfig

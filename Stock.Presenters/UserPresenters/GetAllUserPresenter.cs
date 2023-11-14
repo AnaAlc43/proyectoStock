@@ -5,7 +5,7 @@ namespace Stock.Presenters.UserPresenters
 {
     public class GetAllUserPresenter : IGetAllUsersPresenter
     {
-        public WSelectAllUsers Users { get; private set; }
+        public WSelectAllUsers? Users { get; private set; }
 
         public ValueTask Handle(WSelectAllUsers users)
         {

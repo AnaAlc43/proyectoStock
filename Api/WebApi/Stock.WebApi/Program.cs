@@ -1,5 +1,14 @@
-var builder = WebApplication.CreateBuilder(args);
+using Stock.WebApi;
 
+
+
+
+var builder = WebApplication.CreateBuilder(args)
+    .CreateWebApplication()
+    .ConfigureWebApplication();
+builder.Run();
+
+/*
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -20,5 +29,4 @@ app.UseAuthorization();
 
 app.MapControllers();
 
-app.Run();
-
+app.Run();*/

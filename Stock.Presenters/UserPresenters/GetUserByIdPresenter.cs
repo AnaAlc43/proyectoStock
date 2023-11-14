@@ -5,7 +5,7 @@ namespace Stock.UserPresenters
 {
     public class GetUserByIdPresenter : IGetUserByIdPresenter
     {
-        public WSelectUser User { get; private set; }
+        public WSelectUser? User { get; private set; }
 
         public Task Handle(WSelectUser user)
         {

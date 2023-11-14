@@ -1,3 +1,4 @@
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.BusinessRules.dll.config
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.BusinessRules.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.BusinessRules.pdb
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.COMMON.dll

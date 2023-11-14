@@ -4,6 +4,7 @@ C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Controllers\bi
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Controllers\bin\Debug\net7.0\Stock.BusinessRules.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Controllers\bin\Debug\net7.0\Stock.COMMON.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Controllers\bin\Debug\net7.0\Stock.BusinessRules.pdb
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Controllers\bin\Debug\net7.0\Stock.BusinessRules.dll.config
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Controllers\bin\Debug\net7.0\Stock.COMMON.pdb
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Controllers\obj\Debug\net7.0\Stock.Controllers.csproj.AssemblyReference.cache
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Controllers\obj\Debug\net7.0\Stock.Controllers.GeneratedMSBuildEditorConfig.editorconfig

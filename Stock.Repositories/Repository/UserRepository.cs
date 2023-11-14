@@ -58,7 +58,7 @@ namespace Stock.Repository.Repositories
         {
             try
             {
-                List<Users> result = new List<Users>();
+                List<Users> result = new();
                 result = await _context.Users.Where(a => a.IsDeleted == false).ToListAsync();
                 return result;
             }
@@ -73,7 +73,7 @@ namespace Stock.Repository.Repositories
         {
             try
             {
-                Users result = new Users();
+                Users result = new();
                 result = await _context.Users.FirstOrDefaultAsync(a => a.Id == userId && a.IsDeleted == false);
                 return result;
 
