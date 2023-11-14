@@ -5,6 +5,7 @@ using Stock.BusinessRules.Interfaces.Presenters.User;
 using Stock.BusinessRules.Wrappers.User;
 using Stock.UseCases.Specification.UserSpecifications;
 using Stock.COMMON.Interfaces.Repositories;
+using Stock.COMMON.Entities;
 
 namespace Stock.UseCases.UsesCases.UserUseCase
 {
@@ -38,10 +39,9 @@ namespace Stock.UseCases.UsesCases.UserUseCase
                     return;
                 }           
         
-                /*
                 // Obtener el UserResponse existente por su ID
                 // Obtener el UserResponse existente por su ID
-                User existingUser = await _repository.GetById(updateUserRequest.Id);
+                Users existingUser = await _repository.GetById(updateUserRequest.Id);
                 if (existingUser == null)
                 {
                     // Manejar el caso en el que el UserResponse no existe
@@ -75,7 +75,7 @@ namespace Stock.UseCases.UsesCases.UserUseCase
                 userResponse.NombreUsuario = existingUser.Nombre;
 
                 // Enviar la respuesta al presentador
-                await _presenter.Handle(userResponse);*/
+                await _presenter.Handle(userResponse);
             }
 
             catch (Exception ex)

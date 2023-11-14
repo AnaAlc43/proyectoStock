@@ -4,7 +4,9 @@ using Stock.BusinessRules.PersonalException;
 using Stock.BusinessRules.Wrappers.User;
 using Stock.COMMON.Entities;
 using Stock.COMMON.Interfaces.Repositories;
-using static Stock.BusinessRules.Wrappers.User.WSelectAllUsers;
+using Stock.BusinessRules.DTOs.UserDTOs;
+
+
 
 namespace Stock.UseCases.UsesCases.UserUsesCase
 {
@@ -21,7 +23,7 @@ namespace Stock.UseCases.UsesCases.UserUsesCase
 
         public async ValueTask Handle()
         {
-            WSelectAllUsers usersResponse = new();
+            WSelectAllUsers userResponse = new();
             try
             {
                 var existingUsers = await _repository.GetAllUsers();
@@ -30,29 +32,29 @@ namespace Stock.UseCases.UsesCases.UserUsesCase
                 {
                     foreach (var user in existingUsers)
                     {
-                       usersResponse.Users.Add(new User
+                       userResponse.Users.Add(new UserResponse
                        {
-                           IdUser = user.Id,
-                           NombreUser = user.Nombre
+                           Id = user.Id,
+                           NombreUsuario = user.Nombre
                        });
                     }
                 }
                 else
                 {
-                    usersResponse.ErrorNumber = 404;
-                    usersResponse.Message = "No existen registros en la tabla Usuarios.";
+                    userResponse.ErrorNumber = 404;
+                    userResponse.Message = "No existen registros en la tabla Usuarios.";
                 }
 
             }
             catch (DBMySqlException ex)
             {
-                usersResponse.ErrorNumber = ex.Number;
-                usersResponse.Message = ex.MessageError;
+                userResponse.ErrorNumber = ex.Number;
+                userResponse.Message = ex.MessageError;
 
             }
             finally
             {
-                await _presenter.Handle(usersResponse);
+                await _presenter.Handle(userResponse);
             }
         }
     }

@@ -3,4 +3,5 @@ C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.Web
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\obj\Debug\net7.0\Stock.WebApi.AssemblyInfoInputs.cache
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\obj\Debug\net7.0\Stock.WebApi.AssemblyInfo.cs
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\obj\Debug\net7.0\Stock.WebApi.csproj.CoreCompileInputs.cache
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\obj\Debug\net7.0\Stock.WebApi.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\obj\Debug\net7.0\Stock.WebApi.MvcApplicationPartsAssemblyInfo.cache

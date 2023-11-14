@@ -2,6 +2,7 @@
 using Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts;
 using Stock.UseCases.Specification.UserSpecifications;
 using Stock.UseCases.UsesCases.UserUseCase;
+using Stock.UseCases.UsesCases.UserUsesCase;
 
 namespace Stock.UseCases
 {
@@ -17,7 +18,7 @@ namespace Stock.UseCases
 
             services.AddScoped<IGetUserByIdInputPort, GetUserByIdInteractor>();
 
-            services.AddScoped<IGetAllUserInputPort, GetAllUserIterator>();
+            services.AddScoped<IGetAllUsersInputPort, GetAllUsersIterator>();
 
             return services;
 

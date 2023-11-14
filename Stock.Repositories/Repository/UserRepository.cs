@@ -37,7 +37,7 @@ namespace Stock.Repository.Repositories
         {
             try
             {
-                var result = await _context.Users.FirstOrDefaultAsync(a => a.IdUser == userId && a.IsDeleted == false);
+                var result = await _context.Users.FirstOrDefaultAsync(a => a.Id == userId && a.IsDeleted == false);
                 if (result != null)
                 {
                     result.IsDeleted = true;
@@ -54,11 +54,11 @@ namespace Stock.Repository.Repositories
         }
 
 
-        /*public async Task<List<User>> GetAllUsers()
+        public async Task<List<Users>> GetAllUsers()
         {
             try
             {
-                List<User> result = new List<User>();
+                List<Users> result = new List<Users>();
                 result = await _context.Users.Where(a => a.IsDeleted == false).ToListAsync();
                 return result;
             }
@@ -67,13 +67,13 @@ namespace Stock.Repository.Repositories
 
                 throw new DBMySqlException(ex.Number, ex.Message);
             }
-        }*/
+        }
 
-        /*public async Task<User> GetById(int userId)
+        public async Task<Users> GetById(int userId)
         {
             try
             {
-                User result = new User();
+                Users result = new Users();
                 result = await _context.Users.FirstOrDefaultAsync(a => a.Id == userId && a.IsDeleted == false);
                 return result;
 
@@ -83,23 +83,14 @@ namespace Stock.Repository.Repositories
 
                 throw new DBMySqlException(ex.Number, ex.Message);
             }
-        }*/
+        }
 
-        public async Task SaveChange()
+        public Task SaveChange()
         {
-            await _context.SaveChangesAsync();
+            throw new NotImplementedException();
         }
 
         public Task Update(Users user)
-        {
-            throw new NotImplementedException();
-        }
-        public Task<Users> GetById(int id)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task IsDelete(int id)
         {
             throw new NotImplementedException();
         }

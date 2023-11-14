@@ -8,7 +8,7 @@ namespace Stock.BusinessRules.Interfaces.Presenters.UserPresenters
 
     public interface IGetUserByIdPresenter : IGetUserByIdOutputPort
     {
-        ///  Propiedad User que contiene los detalles del User recuperado.
+        //  Propiedad User que contiene los detalles del User recuperado.
         WSelectUser User { get; }
     }
 

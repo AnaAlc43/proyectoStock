@@ -23,19 +23,6 @@ namespace Stock.UseCases.UsesCases.UserUseCase
             WDeleteUser userResponse = new();
             try
             {
-                // Obtener el userResponse existente por su ID
-                //var existingUser = _repository.GetById(idUser);
-
-                //if (existingUser == null)
-                //{
-                //    // Manejar el caso en el que el userResponse no existe
-                //    // Devuelve un mensaje indicando que el userResponse no se encontró.
-                //    userResponse.ErrorNumber = 404;
-                //    userResponse.Message = "El Id proporcionado no es valido o no existe";
-                //    await _presenter.Handle(userResponse);
-                //    return;
-                //}
-
                 // Eliminar el usuario
                 await _repository.Delete(idUser);
                 await _repository.SaveChange();

@@ -25,6 +25,5 @@ namespace Stock.COMMON.Entities
 
         public virtual ICollection<Sales> Sales { get; set; } = new List<Sales>();
 
-
     }
 }

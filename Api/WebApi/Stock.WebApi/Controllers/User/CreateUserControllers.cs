@@ -1,43 +1,38 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
+using Stock.BusinessRules.Interfaces.Controllers.UserControllers;
+using System.Threading.Tasks;
 
-namespace Stock.WebApi.Controllers.User
-
+namespace Stock.WebApi.Controllers
 {
     [ApiController]
-    [Route("api/users")]
+    [Route("api/[controller]")]
     public class UserController : ControllerBase
     {
-        private readonly UserService _userService;
+        private readonly IGetUserByIdController _getUserController;
 
-        public UserController(UserService userService)
+        public UserController(IGetUserByIdController getUserController)
         {
-            _userService = userService;
-        }
-
-        [HttpPost]
-        public ActionResult CreateUser([FromBody] UserDto userDto)
-        {
-            try
-            {
-                var newUser = _userService.CreateUser(userDto.Username, userDto.Password, userDto.Roles);
-                return CreatedAtAction(nameof(GetUser), new { id = newUser.Id }, newUser);
-            }
-            catch (Exception ex)
-            {
-                return BadRequest(new { error = ex.Message });
-            }
+            _getUserController = getUserController;
         }
 
         [HttpGet("{id}")]
-        public ActionResult<UserDto> GetUser(int id)
+        public async Task<IActionResult> GetUser(int id)
         {
-            var user = _userService.GetUserById(id);
-            if (user != null)
+            var user = await _getUserController.GetUser(id);
+
+            if (user == null)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError);
+            }
+            else if (user.ErrorNumber != 0 && !string.IsNullOrEmpty(user.Message))
+            {
+                return BadRequest(user);
+            }
+            else
             {
                 return Ok(user);
             }
-
-            return NotFound(new { error = "User not found" });
         }
-    }      
+    }
 }
