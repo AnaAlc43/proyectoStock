@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ZG/Hq9nsfXj5EGnN2TOS0HEWHK2D9gbshPRKTqFwsCl/BtUHUkNDxW5SScXXb8foY0x+ai6nv1oVMWkFz9mvag==",
+  "dgSpecHash": "LrOwYheUozDdL+j6i/QDsmQugZkrO1/PB2MiAxLKdhwUahBdObBuZHuBkwjlKNMhbbb16IK0mGoRrfSOxTX1nw==",
   "success": true,
   "projectFilePath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.UseCases\\Stock.UseCases.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\anaan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
+    "C:\\Users\\anaan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
   ],
   "logs": []
 }

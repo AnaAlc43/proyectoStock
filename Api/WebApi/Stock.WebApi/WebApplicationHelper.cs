@@ -1,11 +1,11 @@
 ﻿using Stock.DependencyInversion;
-using Stock.WebApi.Controllers.User;
+using Stock.WebApi.EndPoint.User;
 
 namespace Stock.WebApi
 {
     public static class WebApplicationHelper
     {
-        public static WebApplication CreateWebApplication(this WebApplicationBuilder builder)
+        public static WebApplication? CreateWebApplication(this WebApplicationBuilder builder)
         {
             // Configurar APIExplorer para descubrir y exponer
             // los metadatos de los endpoints de la aplicación.
@@ -41,7 +41,6 @@ namespace Stock.WebApi
                 return default;
             }
 
-
         }
         public static WebApplication ConfigureWebApplication(
             this WebApplication app)
@@ -58,8 +57,8 @@ namespace Stock.WebApi
             // Registrar los endpoints de la aplicación
             //app.GetAllUserEndPoint();
             app.GetUserEndPoint();
-            //app.CreateUserEndPoint();
-            //app.DeleteUserEndPoint();
+            app.CreateUserEndPoint();
+            app.DeleteUserEndPoint();
 
             // Agregar el Middleware CORS
             app.UseCors();
