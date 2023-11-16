@@ -3169,7 +3169,6 @@
     "net7.0": [
       "Microsoft.AspNetCore.OpenApi >= 7.0.13",
       "Microsoft.EntityFrameworkCore.Design >= 7.0.13",
-      "Microsoft.Extensions.DependencyInjection.Abstractions >= 8.0.0",
       "Stock.Controllers >= 1.0.0",
       "Stock.DependencyInversion >= 1.0.0",
       "Stock.Repositories >= 1.0.0",
@@ -3240,10 +3239,6 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.13, )"
-          },
-          "Microsoft.Extensions.DependencyInjection.Abstractions": {
-            "target": "Package",
-            "version": "[8.0.0, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

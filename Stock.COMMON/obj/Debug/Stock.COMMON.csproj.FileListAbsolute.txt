@@ -1,6 +1,16 @@
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\Stock.COMMON.dll.config
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\Stock.COMMON.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\Stock.COMMON.pdb
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\obj\Debug\Stock.COMMON.csproj.AssemblyReference.cache
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\obj\Debug\Stock.COMMON.csproj.CoreCompileInputs.cache
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\obj\Debug\Stock.COMMON.csproj.CopyComplete
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\obj\Debug\Stock.COMMON.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.COMMON\obj\Debug\Stock.COMMON.pdb

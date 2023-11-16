@@ -21,6 +21,12 @@ namespace Stock.Controllers.UserControllers
         {
             await _inputPort.Handle(request);
             return _presenter.User;
+
+            //return new UserCreationResult
+            //{
+            //   Message = $"Usuario '{request.Nombre}' creado con éxito."
+            //};
+            
         }
     }
 }

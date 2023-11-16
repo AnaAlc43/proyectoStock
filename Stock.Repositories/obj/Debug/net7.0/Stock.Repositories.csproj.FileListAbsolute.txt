@@ -7,6 +7,7 @@ C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Repositories\b
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Repositories\bin\Debug\net7.0\Stock.BusinessRules.pdb
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Repositories\bin\Debug\net7.0\Stock.BusinessRules.dll.config
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Repositories\bin\Debug\net7.0\Stock.COMMON.pdb
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Repositories\bin\Debug\net7.0\Stock.COMMON.dll.config
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Repositories\obj\Debug\net7.0\Stock.Repositories.csproj.AssemblyReference.cache
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Repositories\obj\Debug\net7.0\Stock.Repositories.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.Repositories\obj\Debug\net7.0\Stock.Repositories.AssemblyInfoInputs.cache

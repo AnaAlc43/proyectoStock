@@ -1,10 +1,15 @@
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.BusinessRules.dll.config
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.BusinessRules.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.BusinessRules.pdb
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.COMMON.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\System.Threading.Tasks.Extensions.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.COMMON.pdb
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Stock.COMMON.dll.config
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\Microsoft.Extensions.DependencyInjection.Abstractions.xml
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Stock.BusinessRules\obj\Debug\Stock.BusinessRules.csproj.AssemblyReference.cache
