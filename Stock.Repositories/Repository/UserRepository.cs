@@ -20,7 +20,7 @@ namespace Stock.Repository.Repositories
         {
             try
             {
-                await _context.AddAsync(user);
+                await _context.Users.AddAsync(user);
             }
             catch (MySqlException ex)
             {
@@ -28,16 +28,11 @@ namespace Stock.Repository.Repositories
             }
         }
 
-        public Task CreateRol(Roles nombre)
-        {
-            throw new NotImplementedException();
-        }
-
         public async Task Delete(int userId)
         {
             try
             {
-                var result = await _context.Users.FirstOrDefaultAsync(a => a.Id == userId && a.IsDeleted == false);
+                var result = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId && u.IsDeleted == false);
                 if (result != null)
                 {
                     result.IsDeleted = true;
@@ -53,13 +48,17 @@ namespace Stock.Repository.Repositories
             }
         }
 
+        public Task CreateRol(Roles nombre)
+        {
+            throw new NotImplementedException();
+        }
 
         public async Task<List<Users>> GetAllUsers()
         {
             try
             {
                 List<Users> result = new();
-                result = await _context.Users.Where(a => a.IsDeleted == false).ToListAsync();
+                result = await _context.Users.Where(u => u.IsDeleted == false).ToListAsync();
                 return result;
             }
             catch (MySqlException ex)
@@ -74,7 +73,7 @@ namespace Stock.Repository.Repositories
             try
             {
                 Users result = new();
-                result = await _context.Users.FirstOrDefaultAsync(a => a.Id == userId && a.IsDeleted == false);
+                result = await _context.Users.FirstOrDefaultAsync(u => u.Id == userId && u.IsDeleted == false);
                 return result;
 
             }
@@ -85,9 +84,9 @@ namespace Stock.Repository.Repositories
             }
         }
 
-        public Task SaveChange()
+        public async Task SaveChange()
         {
-            throw new NotImplementedException();
+            await _context.SaveChangesAsync();
         }
 
         public Task Update(Users user)

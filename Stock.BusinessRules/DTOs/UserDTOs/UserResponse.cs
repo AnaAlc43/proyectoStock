@@ -13,7 +13,7 @@ namespace Stock.BusinessRules.DTOs.UserDTOs
 
         public int Id { get; set; }
         public string NombreUsuario { get; set; }
-        public int IdRol { get; set; }
+        public int IdRoles { get; set; }
         public string NombreRol { get; set; }
            
     }

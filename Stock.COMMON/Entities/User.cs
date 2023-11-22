@@ -13,7 +13,7 @@ namespace Stock.COMMON.Entities
 
         public string Apellido { get; set; }
 
-        public string Cuil { get; set; }
+        public string CUIT { get; set; }
 
         public string Email { get; set; }
 

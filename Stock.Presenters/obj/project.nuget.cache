@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7/6feAwNfdWLM+LYYDpDXH+qdNHuElbf6Bf3T3RN/rhgkJIB25EsdoiOyOk6Uniil4eMWEyV5RkpIiwOWtkmaQ==",
+  "dgSpecHash": "c/E8UR9RShKquUSiGSUFFJtqqTxZslBW9YBKtc6pF2mE7Fbe+rQ90WqESvJ8/7EfaY7k6iw348GL5/7CyzTSaw==",
   "success": true,
   "projectFilePath": "C:\\Users\\anaan\\Documents\\01.CleanArquitecture\\proyectoStock\\Stock.Presenters\\Stock.Presenters.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\anaan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+    "C:\\Users\\anaan\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512"
   ],
   "logs": []
 }

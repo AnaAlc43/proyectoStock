@@ -6,13 +6,11 @@ namespace Stock.Repositories.EFCore.Configurations
 {
     public class UserConfiguration : IEntityTypeConfiguration<Users>
     {
-       public void Configure (EntityTypeBuilder<Users> builder)
-       {
+        public void Configure(EntityTypeBuilder<Users> builder)
+        {
             builder.ToTable("users");
             {
                 builder.HasKey(e => e.IdUser).HasName("PRIMARY");
-
-                builder.ToTable("users");
 
                 builder.HasIndex(e => e.Rol, "rol_idx");
 
@@ -20,9 +18,9 @@ namespace Stock.Repositories.EFCore.Configurations
                 builder.Property(e => e.Apellido)
                         .HasMaxLength(45)
                         .HasColumnName("apellido");
-                builder.Property(e => e.Cuil)
+                builder.Property(e => e.CUIT)
                         .HasMaxLength(45)
-                        .HasColumnName("cuil");
+                        .HasColumnName("cuit");
                 builder.Property(e => e.Descripcion)
                         .HasMaxLength(45)
                         .HasColumnName("descripcion");
@@ -41,22 +39,22 @@ namespace Stock.Repositories.EFCore.Configurations
                         .HasForeignKey(d => d.Rol)
                         .HasConstraintName("rol");
             }
-       }
-            /*builder.ToTable("User");
+        }
+        /*builder.ToTable("User");
 
-            builder.HasKey(a => a.IdUser); // Clave primaria.
+        builder.HasKey(a => a.IdUser); // Clave primaria.
 
-            builder.Property(a => a.IdUser)
-                .IsRequired()
-                .HasColumnName("idUser") // Nombre de la columna en la base de datos MySQL.
-                .HasColumnType("int") //Indica el tipo de dato de la columna en MySql.
-                .UseMySQLAutoIncrementColumn("idUser");// Indica que es una columna de identidad en MySQL.
+        builder.Property(a => a.IdUser)
+            .IsRequired()
+            .HasColumnName("idUser") // Nombre de la columna en la base de datos MySQL.
+            .HasColumnType("int") //Indica el tipo de dato de la columna en MySql.
+            .UseMySQLAutoIncrementColumn("idUser");// Indica que es una columna de identidad en MySQL.
 
-            builder.Property(a => a.Nombre)
-                .HasColumnName("nombre") // Nombre de la columna en la base de datos MySQL.
-                .HasColumnType("varchar") //Indica el tipo de dato de la columna en MySql.
-                .HasMaxLength(45)
-                .IsRequired();*/
+        builder.Property(a => a.Nombre)
+            .HasColumnName("nombre") // Nombre de la columna en la base de datos MySQL.
+            .HasColumnType("varchar") //Indica el tipo de dato de la columna en MySql.
+            .HasMaxLength(45)
+            .IsRequired();*/
 
     }
 }

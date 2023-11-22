@@ -6,9 +6,9 @@ namespace Stock.WebApi.EndPoint.User
     {
         public static WebApplication DeleteUserEndPoint(this WebApplication app)
         {
-            app.MapPut("/user/delete/{id}", async (IDeleteUserController controller, int id) =>
+            app.MapPut("/user/delete/{id}", async (IDeleteUserController controller, int idUser) =>
             {
-                var user = await controller.DeleteUser(id);
+                var user = await controller.DeleteUser(idUser);
                 if (user == null)
                 {
                     return Results.StatusCode(StatusCodes.Status500InternalServerError);

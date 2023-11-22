@@ -1,5 +1,4 @@
-﻿using Stock.BusinessRules.DTOs.UserDTOs;
-using Stock.BusinessRules.Interfaces.Controllers.UserControllers;
+﻿using Stock.BusinessRules.Interfaces.Controllers.UserControllers;
 using Stock.BusinessRules.Interfaces.Getways.UserGetways.InputPorts;
 using Stock.BusinessRules.Interfaces.Presenters.User;
 using Stock.BusinessRules.Wrappers.User;
@@ -17,15 +16,10 @@ namespace Stock.Controllers.UserControllers
             _presenter = presenter;
         }
 
-        public async Task<WDeleteUser> DeletetUser(int IdUser)
+        public async Task<WDeleteUser> DeleteUser(int IdUser)
         {
             await _inputPort.Handle(IdUser);
             return _presenter.User;
-        }
-
-        public Task<WDeleteUser> DeleteUser(int IdUser)
-        {
-            throw new NotImplementedException();
         }
     }
 }

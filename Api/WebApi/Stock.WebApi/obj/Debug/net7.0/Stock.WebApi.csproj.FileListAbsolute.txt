@@ -16,10 +16,7 @@ C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.Web
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Abstractions.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\bin\Debug\net7.0\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\bin\Debug\net7.0\Microsoft.Extensions.Primitives.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\bin\Debug\net7.0\Microsoft.OpenApi.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\Users\anaan\Documents\01.CleanArquitecture\proyectoStock\Api\WebApi\Stock.WebApi\bin\Debug\net7.0\Mono.TextTemplating.dll

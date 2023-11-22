@@ -22,13 +22,13 @@ namespace Stock.UseCases.UsesCases.UserUseCase
 
         public async Task Handle(UpdateUserRequest updateUserRequest)
         {
-            List<ValidationErrorDTOs> errors = new List<ValidationErrorDTOs>();
+            _ = new List<ValidationErrorDTOs>();
             WUpdateUser userResponse = new();
 
             try
             {
                 //Valida los datos del UserResponse a actualizar.
-                errors = ValidateUser(updateUserRequest);
+                List<ValidationErrorDTOs> errors = ValidateUser(updateUserRequest);
 
                 if (errors.Any())
                 {
@@ -40,29 +40,17 @@ namespace Stock.UseCases.UsesCases.UserUseCase
                 }           
         
                 // Obtener el UserResponse existente por su ID
-                // Obtener el UserResponse existente por su ID
-                Users existingUser = await _repository.GetById(updateUserRequest.Id);
+                Users existingUser = await _repository.GetById(updateUserRequest.IdUser);
                 if (existingUser == null)
                 {
                     // Manejar el caso en el que el UserResponse no existe
                     // Devuelve un mensaje indicando que el UserResponse no se encontró.
                     userResponse.ErrorNumber = 404;
-                    userResponse.Message = $"El Usuario con {updateUserRequest.Id} no existe";
+                    userResponse.Message = $"El Usuario con {updateUserRequest.IdUser} no existe";
                     await _presenter.Handle(userResponse);
                     return;
                 }
-                existingUser = await _repository.GetById(updateUserRequest.Id);
 
-                if (existingUser == null)
-                {
-                    // Manejar el caso en el que el UserResponse no existe
-                    // Devuelve un mensaje indicando que el UserResponse no se encontró.
-                    userResponse.ErrorNumber = 404;
-                    userResponse.Message = $"El acton con {updateUserRequest.Id} no existe";
-                    await _presenter.Handle(userResponse);
-                    return;
-                }
-                
                 // Actualizar la información del User con los datos proporcionados
                 existingUser.Nombre = updateUserRequest.Nombre;
 
@@ -89,7 +77,7 @@ namespace Stock.UseCases.UsesCases.UserUseCase
             }
         }
         
-        private List<ValidationErrorDTOs> ValidateUser(UpdateUserRequest updateUserRequest)
+        private static List<ValidationErrorDTOs> ValidateUser(UpdateUserRequest updateUserRequest)
         {
             var specification = new UpdateUserSpecifications(updateUserRequest);
             return specification.IsValid();

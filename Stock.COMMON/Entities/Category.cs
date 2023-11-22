@@ -9,8 +9,6 @@ namespace Stock.COMMON.Entities
 
         public string Nombre { get; set; } //nombre de la categoría, como "Electrónica", "Ropa", etc.
 
-        public string Marca { get; set; } // nombre de la marca asociada a la categoría, como "Samsung".
-
         public string Descripcion { get; set; } //Es una descripción detallada de la categoría.
 
         public virtual ICollection<Product> Products { get; set; } = new List<Product>();

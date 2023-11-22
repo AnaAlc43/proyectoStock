@@ -15,7 +15,7 @@ namespace Stock.COMMON.Entities
 
         public DateTime? Vencimiento { get; set; }
 
-        public float? PrecioProducto { get; set; }
+        public decimal? PrecioProducto { get; set; }
 
         public int? Codigoproducto { get; set; }
 

@@ -24,6 +24,8 @@ namespace Stock.BusinessRules.DTOs.UserDTOs
 
         public string Email { get; set; }
 
+        //public int IdRoles { get; set; }
+
         //public string Contraseña { get; set; }
 
         //Almacenar contraseñas en texto sin formato.

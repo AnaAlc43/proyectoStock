@@ -17,7 +17,7 @@ public partial class Controlstock1Context : DbContext
     {
     }
 
-    public virtual DbSet<Category> Categories { get; set; }
+    /*public virtual DbSet<Category> Categories { get; set; }
 
     public virtual DbSet<Customer> Customers { get; set; }
 
@@ -29,7 +29,7 @@ public partial class Controlstock1Context : DbContext
 
     public virtual DbSet<Sales> Sales { get; set; }
 
-    public virtual DbSet<Salesdetail> Salesdetails { get; set; }
+    public virtual DbSet<Salesdetail> Salesdetails { get; set; }*/
 
     public virtual DbSet<Users> Users { get; set; }
 
@@ -39,6 +39,15 @@ public partial class Controlstock1Context : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         // Aplica configuraciones de entidades desde el ensamblado actual.
+        modelBuilder.Entity<Category>().HasKey(x => x.IdCategory);
+        modelBuilder.Entity<Customer>().HasKey(x => x.IdCustomer);
+        modelBuilder.Entity<Provider>().HasKey(x => x.IdProvider);
+        modelBuilder.Entity<Sales>().HasKey(x => x.IdSales);
+        modelBuilder.Entity<Salesdetail>().HasKey(x => x.IdDetail);
+        modelBuilder.Entity<Product>().HasKey(x => x.IdProduct);
+        modelBuilder.Entity<Roles>().HasKey(x => x.IdRoles);
+
+
         modelBuilder.ApplyConfigurationsFromAssembly(
             Assembly.GetExecutingAssembly());
     }

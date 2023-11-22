@@ -17,7 +17,7 @@ namespace Stock.UseCases.Specification.UserSpecifications
 
         public List<ValidationErrorDTOs> IsValid()
         {
-            if (_entity.Id == 0)
+            if (_entity.IdUser == 0)
             {
                 _errors.Add(new ValidationErrorDTOs()
                 {

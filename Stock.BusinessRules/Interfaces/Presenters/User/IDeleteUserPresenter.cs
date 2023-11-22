@@ -5,12 +5,12 @@ namespace Stock.BusinessRules.Interfaces.Presenters.User
 {
     /// <summary>
     /// Este presenter se encarga de manejar la presentación después de realizar un borrado
-    /// lógico de un actor desde el contexto.
+    /// lógico de un usuario desde el contexto.
     /// </summary>
     public interface IDeleteUserPresenter : IDeleteUserOutputPort
     {
         /// <summary>
-        /// Propiedad Actor que contiene detalles sobre la operación
+        /// Propiedad User que contiene detalles sobre la operación
         /// de eliminación.
         /// </summary>
         WDeleteUser User { get; }
